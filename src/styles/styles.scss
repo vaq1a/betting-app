@@ -1,5 +1,5 @@
-@import "blocks/card";
-
-.title {
-  color: red;
-}
+@import './vars/vars';
+@import './mixins/mixins';
+@import './base/base';
+@import './svg/svg';
+@import './blocks/card';
