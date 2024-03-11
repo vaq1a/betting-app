@@ -1,9 +1,10 @@
-import {cleanAll, cleanHtml, cleanImages, cleanStyles} from "./clean.js"
+import {cleanAll, cleanHtml, cleanImages, cleanStyles, cleanFonts} from "./clean.js"
 import styles from "./styles.js"
 import reload from "./reload.js"
 import images from "./images.js"
 import staticFiles from "./staticFiles.js"
 import scripts from "./scripts.js"
+import fonts from "./fonts.js"
 import createDir from "./createDir.js"
 
 export {
@@ -11,10 +12,12 @@ export {
     cleanHtml,
     cleanImages,
     cleanStyles,
+    cleanFonts,
     styles,
     reload,
     images,
     staticFiles,
     scripts,
-    createDir
+    fonts,
+    createDir,
 }

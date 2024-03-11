@@ -5,11 +5,13 @@ import {
     cleanHtml,
     cleanImages,
     cleanStyles,
+    cleanFonts,
     styles,
     reload,
     images,
     staticFiles,
     scripts,
+    fonts,
     createDir
 } from './gulp/tasks/index.js'
 import {
@@ -26,15 +28,15 @@ function devServer() {
     })
 
     watch(PATHS["styles"].src, series(cleanStyles, styles, reload))
+    watch(PATHS["fonts"].src, series(cleanFonts, fonts, reload))
     watch(PATHS["images"].src, series(cleanImages, images, reload))
     watch(PATHS["staticFiles"].src, series(cleanHtml, staticFiles, scripts, reload))
 }
 
-// TODO: add fonts
-const development = series(createDir, cleanAll, styles, scripts, images, staticFiles, devServer)
+const development = series(createDir, cleanAll, styles, scripts, fonts, images, staticFiles, devServer)
 development.displayName = 'dev'
 export { development }
 
-const production = series(createDir, cleanAll, styles, scripts, images, staticFiles)
+const production = series(createDir, cleanAll, styles, scripts, fonts, images, staticFiles)
 production.displayName = 'prod'
 export { production }

@@ -17,3 +17,7 @@ export function cleanHtml() {
 export function cleanImages() {
     return gulp.src(PATHS["images"].dist).pipe(clean({read: false}))
 }
+
+export function cleanFonts() {
+    return gulp.src(PATHS["fonts"].dist).pipe(clean({read: false}))
+}
