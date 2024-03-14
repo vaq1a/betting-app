@@ -1,0 +1,16 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.social-links__link {}
+
+.social-links__icon-wrapper {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.3rem;
+  color: $color-blue-60;
+}
+
+.social-links__icon {}

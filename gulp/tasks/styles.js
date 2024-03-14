@@ -16,9 +16,6 @@ export default function styles() {
         }))
         .pipe(cleanCSS({
             level: {
-                1: {
-                    all: false
-                },
                 2: {
                     all: false,
                     removeDuplicateRules: true,

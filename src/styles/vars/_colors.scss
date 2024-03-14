@@ -1,23 +1,40 @@
 /**
  * Black
  */
-$color-black: #000000;
+$color-black: hsl(0, 0%, 0%);
+$color-black-80: hsl(226, 25%, 10%);
 
 /**
  * White
  */
-$color-white: #fff;
+$color-white: hsl(0, 0%, 100%);
+
+/**
+ * Yellow
+ */
+$color-yellow-60: hsl(47, 100%, 50%);
+
+/**
+ * Grey
+ */
+$color-grey-50: hsl(230, 19%, 50%);
+
+/**
+ * Blue
+ */
+$color-blue-60: hsl(230, 29%, 33%);
 
 /**
  * Error
  */
-$color-error-40: #f7afa0;
-$color-error-60: #f48870;
-$color-error-80: #f06040;
-$color-error-primary: #ec3811;
-$color-error-red: #cb4141;
+$color-error-40: hsl(10, 84%, 80%);
+$color-error-60: hsl(11, 86%, 70%);
+$color-error-80: hsl(11, 85%, 60%);
+$color-error-primary: hsl(11, 87%, 50%);
+$color-error-red: hsl(0, 57%, 53%);
 
 /**
  * Other
  */
-$color-placeholder: #f5f5f5;
+$color-placeholder: hsl(0, 0%, 96%);
+$color-border: hsl(230, 19%, 50%, 0.2);
