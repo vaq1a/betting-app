@@ -1,5 +1,3 @@
-$font-path: '../../assets/fonts';
-
 // Lato
 @font-face {
   font-family: "Lato";
@@ -7,7 +5,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 500;
   src: local("Lato"),
-  url($font-path + "/Lato/Lato-Medium.woff2") format("woff2");
+  url($fonts-path + "/Lato/Lato-Medium.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }
@@ -19,7 +17,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 400;
   src: local("Oswald"),
-  url($font-path + "/Oswald/Oswald-Regular.woff2") format("woff2");
+  url($fonts-path + "/Oswald/Oswald-Regular.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }
@@ -30,7 +28,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 500;
   src: local("Oswald"),
-  url($font-path + "/Oswald/Oswald-Medium.woff2") format("woff2");
+  url($fonts-path + "/Oswald/Oswald-Medium.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }
@@ -41,7 +39,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 600;
   src: local("Oswald"),
-  url($font-path + "/Oswald/Oswald-SemiBold.woff2") format("woff2");
+  url($fonts-path + "/Oswald/Oswald-SemiBold.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }
@@ -52,7 +50,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 700;
   src: local("Oswald"),
-  url($font-path + "/Oswald/Oswald-Bold.woff2") format("woff2");
+  url($fonts-path + "/Oswald/Oswald-Bold.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }
@@ -64,7 +62,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 400;
   src: local("SegoeUI"),
-  url($font-path + "/SegoeUI/SegoeUI-Regular.woff2") format("woff2");
+  url($fonts-path + "/SegoeUI/SegoeUI-Regular.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }
@@ -75,7 +73,7 @@ $font-path: '../../assets/fonts';
   font-stretch: normal;
   font-weight: 600;
   src: local("SegoeUI"),
-  url($font-path + "/SegoeUI/SegoeUI-SemiBold.woff2") format("woff2");
+  url($fonts-path + "/SegoeUI/SegoeUI-SemiBold.woff2") format("woff2");
   text-rendering: optimizeLegibility;
   font-display: auto;
 }

@@ -1,28 +1,10 @@
 /**
- * Black
+ * Main
  */
-$color-black: hsl(0, 0%, 0%);
-$color-black-80: hsl(226, 25%, 10%);
-
-/**
- * White
- */
-$color-white: hsl(0, 0%, 100%);
-
-/**
- * Yellow
- */
-$color-yellow-60: hsl(47, 100%, 50%);
-
-/**
- * Grey
- */
-$color-grey-50: hsl(230, 19%, 50%);
-
-/**
- * Blue
- */
-$color-blue-60: hsl(230, 29%, 33%);
+$color-dark: hsl(0, 0%, 0%);
+$color-primary: hsl(226, 25%, 10%);
+$color-secondary: hsl(230, 19%, 50%);
+$color-active: hsl(47, 100%, 50%);
 
 /**
  * Error
@@ -38,3 +20,4 @@ $color-error-red: hsl(0, 57%, 53%);
  */
 $color-placeholder: hsl(0, 0%, 96%);
 $color-border: hsl(230, 19%, 50%, 0.2);
+$color-icon: hsl(230, 29%, 33%);
