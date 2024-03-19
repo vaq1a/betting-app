@@ -1,0 +1,20 @@
+.navigation {
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .navigation__link {
+    color: $color-icon;
+
+    &.navigation__link--active {
+      color: $color-active;
+    }
+  }
+
+  .navigation__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
