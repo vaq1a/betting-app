@@ -1,0 +1,13 @@
+.header-aside {
+  background-color: $color-primary;
+  border-right: 1px solid $color-border;
+
+  &.header-aside--width-limitation {
+    width: 8.8rem;
+    height: 100%;
+  }
+
+  .header-aside__logo-sm {
+    margin-bottom: 1.6rem;
+  }
+}

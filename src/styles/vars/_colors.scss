@@ -2,9 +2,13 @@
  * Main
  */
 $color-dark: hsl(0, 0%, 0%);
+$color-light: hsl(0, 0%, 100%);;
 $color-primary: hsl(226, 25%, 10%);
 $color-secondary: hsl(230, 19%, 50%);
 $color-active: hsl(47, 100%, 50%);
+$color-active-80: hsl(60, 20%, 14%);;
+$color-accent-30: hsl(215, 14%, 61%);
+$color-accent-70: hsl(230, 29%, 15%);;
 
 /**
  * Error
@@ -19,5 +23,6 @@ $color-error-red: hsl(0, 57%, 53%);
  * Other
  */
 $color-placeholder: hsl(0, 0%, 96%);
-$color-border: hsl(230, 19%, 50%, 0.2);
+$color-border: hsl(246, 23%, 18%);
 $color-icon: hsl(230, 29%, 33%);
+$color-label: hsl(355, 100%, 65%);
