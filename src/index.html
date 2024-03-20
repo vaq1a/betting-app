@@ -43,11 +43,11 @@
         </nav>
     </div>
     <header class="header">
-        <a href="#" class="logo-md">
-            <picture>
+        <a href="#" class="header__logo-md">
+            <picture class="logo-md">
                 <source srcset="./assets/images/logotype.webp, ./assets/images/logotype-2x.webp 2x" type="image/webp" />
-                <source srcset="./assets/images/logotype.png, ./assets/images/logotype-2x.png 2x" type="image/png" />
                 <img
+                        srcset="./assets/images/logotype.png, ./assets/images/logotype-2x.png 2x"
                         class="logo-md__image"
                         src="./assets/images/logotype.png"
                         alt="Logotype"
@@ -97,21 +97,35 @@
                 </li>
             </ul>
         </nav>
-        <div>
+        <div class="header__actions">
             <div class="languages-toggle">
-
+                <picture class="flag-en languages-toggle__flag-en">
+                    <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
+                    <img
+                            srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
+                            class="flag-en__image"
+                            src="./assets/images/flag-en.png"
+                            alt="Logotype"
+                    />
+                </picture>
+                <span class="languages-toggle__lang">en</span>
+                <svg class="languages-toggle__icon" aria-hidden="true" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 6.87548C0.5 7.09136 0.580339 7.30729 0.740655 7.47194L5.79049 12.6532C6.11172 12.9828 6.63254 12.9828 6.95364 12.6532C7.27473 12.3237 7.27473 11.7895 6.95364 11.4598L2.48533 6.87548L6.95332 2.2909C7.27442 1.9615 7.27442 1.4271 6.95332 1.0977C6.63222 0.767901 6.11157 0.767901 5.79034 1.0977L0.740472 6.27885C0.580183 6.44358 0.5 6.65952 0.5 6.87548Z" fill="currentColor"/>
+                </svg>
             </div>
             <div class="hamburger">
-
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
             </div>
         </div>
     </header>
     <div class="header-aside header-aside--width-limitation">
-        <a href="#" class="logo-sm header-aside__logo-sm">
-            <picture>
+        <a href="#" class="header-aside__logo-sm">
+            <picture class="logo-sm">
                 <source srcset="./assets/images/logotype-small.webp, ./assets/images/logotype-small-2x.webp 2x" type="image/webp" />
-                <source srcset="./assets/images/logotype-small.png, ./assets/images/logotype-small-2x.png 2x" type="image/png" />
                 <img
+                        srcset="./assets/images/logotype-small.png, ./assets/images/logotype-small-2x.png 2x"
                         class="logo-sm__image"
                         src="./assets/images/logotype-small.png"
                         alt="Logotype"

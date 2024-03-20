@@ -1,0 +1,28 @@
+.languages-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1.1rem;
+  border-radius: 0.2rem;
+  background-color: $color-accent-70;
+
+  &__flag-en {
+    margin-right: 0.8rem;
+  }
+
+  &__lang {
+    font-family: $font-oswald;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $color-light;
+    margin-right: 1.9rem;
+  }
+
+  &__icon {
+    width: 0.7rem;
+    height: 1.3rem;
+    color: $color-accent-50;
+  }
+}

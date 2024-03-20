@@ -2,12 +2,15 @@
   background-color: $color-primary;
   border-right: 1px solid $color-border;
 
-  &.header-aside--width-limitation {
+  &--width-limitation {
     width: 8.8rem;
     height: 100%;
   }
 
-  .header-aside__logo-sm {
+  &__logo-sm {
+    display: inline-block;
+    background-color: $color-active-80;
+    padding: 2rem;
     margin-bottom: 1.6rem;
   }
 }

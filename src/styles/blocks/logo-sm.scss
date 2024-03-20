@@ -1,10 +1,11 @@
 .logo-sm {
-  display: inline-block;
-  background-color: $color-active-80;
-  padding: 2rem;
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
 
-  .logo-sm__image {
-    width: 4.8rem;
-    height: 4.8rem;
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }

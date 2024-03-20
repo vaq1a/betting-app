@@ -1,0 +1,26 @@
+.hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  background: repeating-linear-gradient(
+                  135deg,
+                  $color-active-100,
+                  $color-active-100 1.2rem,
+                  $color-active-60 1.2rem,
+                  $color-active-60 2.4rem
+  );
+  padding: 1.3rem 1rem;
+  cursor: pointer;
+
+  &__line {
+    background-color: $color-accent-90;
+    width: 2rem;
+    height: 0.2rem;
+
+    & + & {
+      margin-top: 0.4rem;
+    }
+  }
+}

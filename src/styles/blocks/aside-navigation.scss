@@ -1,11 +1,11 @@
 .aside-navigation {
-  .aside-navigation__list {
+  &__list {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
   }
 
-  .aside-navigation__link {
+  &__link {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,13 +14,13 @@
     position: relative;
   }
 
-  .aside-navigation__icon {
+  &__icon {
     width: 2rem;
     height: 2rem;
   }
 
-  .aside-navigation__title {
-    font-family: "Oswald";
+  &__title {
+    font-family: $font-oswald;
     font-size: 1.4rem;
     line-height: 1.5;
     font-weight: 500;
@@ -28,8 +28,8 @@
     color: $color-secondary;
   }
 
-  .aside-navigation__price {
-    font-family: "SegoeUI";
+  &__price {
+    font-family: $font-segoe-ui;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
@@ -37,12 +37,12 @@
     color: $color-accent-30;
     display: inline-block;
     padding: 0.8rem;
-    background-color: $color-accent-70;
+    background-color: $color-accent-80;
     width: 100%;
   }
 
-  .aside-navigation__label {
-    font-family: "Oswald";
+  &__label {
+    font-family: $font-oswald;
     font-size: 0.8rem;
     line-height: 1.5;
     font-weight: 400;

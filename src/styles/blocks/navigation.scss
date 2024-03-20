@@ -1,19 +1,20 @@
 .navigation {
-  .navigation__list {
+  &__list {
     display: flex;
     align-items: center;
     gap: 2.4rem;
   }
 
-  .navigation__link {
-    color: $color-icon;
+  &__link {
+    display: flex;
+    color: $color-accent-60;
 
-    &.navigation__link--active {
-      color: $color-active;
+    &--active {
+      color: $color-active-60;
     }
   }
 
-  .navigation__icon {
+  &__icon {
     width: 2rem;
     height: 2rem;
   }

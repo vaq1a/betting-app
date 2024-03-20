@@ -5,11 +5,11 @@
   background-color: $color-primary;
   border: 1px solid $color-border;
 
-  .header-upper__social-links {
+  &__social-links {
     margin-right: 5.5rem;
   }
 
-  .header-upper__navigation {
+  &__navigation {
 
   }
 }
