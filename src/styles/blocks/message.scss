@@ -1,0 +1,31 @@
+.message {
+  display: flex;
+  gap: 1.2rem;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  &__header {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__username {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-secondary;
+  }
+
+  &__text {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: $color-light;
+  }
+}

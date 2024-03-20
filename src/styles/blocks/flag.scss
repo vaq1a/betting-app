@@ -1,0 +1,19 @@
+.flag {
+  display: block;
+
+  &--sm {
+    width: 1.7rem;
+    height: 1.2rem;
+  }
+
+  &--md {
+    width: 2.5rem;
+    height: 1.8rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

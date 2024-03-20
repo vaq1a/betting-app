@@ -1,20 +1,30 @@
-@import './vars/vars';
-@import './mixins/mixins';
-@import './fonts/fonts';
-@import './base/base';
+@import 'vars/vars';
+@import 'mixins/mixins';
+@import 'fonts/fonts';
+@import 'base/base';
 
 // blocks
-@import './blocks/header';
-@import './blocks/logo-md';
-@import './blocks/navigation';
-@import './blocks/languages-toggle';
-@import './blocks/flag-en';
-@import './blocks/hamburger';
+@import 'blocks/header';
+@import 'blocks/logo-md';
+@import 'blocks/navigation';
+@import 'blocks/languages-toggle';
+@import 'blocks/flag';
+@import 'blocks/hamburger';
 
-@import './blocks/header-upper';
-@import './blocks/extra-navigation';
-@import './blocks/social-links';
+@import 'blocks/header-upper';
+@import 'blocks/extra-navigation';
+@import 'blocks/social-links';
 
-@import './blocks/header-aside';
-@import './blocks/logo-sm';
-@import './blocks/aside-navigation';
+@import 'blocks/header-aside';
+@import 'blocks/logo-sm';
+@import 'blocks/aside-navigation';
+
+@import 'blocks/chat';
+@import 'blocks/message';
+@import 'blocks/status-badge';
+@import 'blocks/user-avatar';
+@import 'blocks/chat-form';
+@import 'blocks/smiles-trigger';
+@import 'blocks/togglers';
+@import 'blocks/snow';
+@import 'blocks/rules';

@@ -1,0 +1,55 @@
+.chat-form {
+  position: relative;
+  background-color: $color-accent-90;
+  padding: 2rem 2.4rem;
+
+  &__field {
+    display: flex;
+    position: relative;
+  }
+
+  &__textarea {
+    border: 1px solid $color-accent-20;
+    border-radius: 0.4rem;
+    background-color: $color-accent-65;
+    resize: none;
+    width: 100%;
+    min-height: 4.8rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: $color-light;
+    padding: 1rem 4.8rem 1rem 1rem;
+  }
+
+  &__smiles-trigger {
+    position: absolute;
+    right: 1.6rem;
+    top: calc(50% - 1.1rem);
+  }
+
+  &__togglers {
+    margin-bottom: 0.8rem;
+  }
+
+  &__snow {
+    position: absolute;
+    top: -0.8rem;
+
+    &--left {
+      width: 6.9rem;
+      height: 2.7rem;
+      left: 0;
+    }
+
+    &--right {
+      width: 7.4rem;
+      height: 2.4rem;
+      right: 0;
+    }
+  }
+
+  &__rules {
+    margin-top: 1.4rem;
+  }
+}

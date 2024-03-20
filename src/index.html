@@ -9,6 +9,181 @@
     <link rel="stylesheet" href="./styles/styles.min.css">
 </head>
 <body>
+    <div class="chat">
+        <div class="chat__header">
+            <div class="chat__title">
+                live chat
+            </div>
+            <div class="chat__users-count">
+                35 online
+            </div>
+        </div>
+        <div class="chat__body">
+            <div class="message">
+                <picture class="user-avatar">
+                    <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                    <img
+                            srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                            class="user-avatar__image"
+                            src="./assets/images/avatar.png"
+                            alt="Logotype"
+                    />
+                </picture>
+                <div class="message__body">
+                    <div class="message__header">
+                        <picture class="status-badge">
+                            <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                    class="status-badge__image"
+                                    src="./assets/images/badge-default.png"
+                                    alt="Logotype"
+                            />
+                        </picture>
+                        <div class="message__username">janalleman</div>
+                    </div>
+                    <div class="message__text">
+                        wtf
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <div class="user-avatar">
+                    <picture class="user-avatar__wrapper">
+                        <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                        <img
+                                srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                class="user-avatar__image"
+                                src="./assets/images/avatar.png"
+                                alt="Logotype"
+                        />
+                    </picture>
+                </div>
+                <div class="message__body">
+                    <div class="message__header">
+                        <picture class="status-badge">
+                            <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
+                                    class="status-badge__image"
+                                    src="./assets/images/badge-active.png"
+                                    alt="Logotype"
+                            />
+                        </picture>
+                        <div class="message__username">NotTerry</div>
+                    </div>
+                    <div class="message__text">
+                        i just won upgrader and its not giving me my item
+                    </div>
+                </div>
+            </div>
+            <div class="message">
+                <div class="user-avatar">
+                    <picture class="user-avatar__wrapper">
+                        <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                        <img
+                                srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                class="user-avatar__image"
+                                src="./assets/images/avatar.png"
+                                alt="Logotype"
+                        />
+                    </picture>
+                </div>
+                <div class="message__body">
+                    <div class="message__header">
+                        <picture class="status-badge">
+                            <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                    class="status-badge__image"
+                                    src="./assets/images/badge-default.png"
+                                    alt="Logotype"
+                            />
+                        </picture>
+                        <div class="message__username">janalleman</div>
+                    </div>
+                    <div class="message__text">
+                        no i think its lag or soomething bc when i try to upgrade again ita says game active
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-form">
+            <div class="togglers chat-form__togglers">
+                <div class="togglers__item togglers__item--active">
+                    <picture class="flag flag--sm">
+                        <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
+                        <img
+                                srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
+                                class="flag__image"
+                                src="./assets/images/flag-en.png"
+                                alt="Logotype"
+                        />
+                    </picture>
+                    EN room
+                </div>
+                <div class="togglers__item">
+                    <picture class="flag flag--sm">
+                        <source srcset="./assets/images/flag-ru.webp, ./assets/images/flag-ru-2x.webp 2x" type="image/webp" />
+                        <img
+                                srcset="./assets/images/flag-ru.png, ./assets/images/flag-ru-2x.png 2x"
+                                class="flag__image"
+                                src="./assets/images/flag-ru.png"
+                                alt="Logotype"
+                        />
+                    </picture>
+                    RU room
+                </div>
+                <div class="togglers__item">
+                    <picture class="flag flag--sm">
+                        <source srcset="./assets/images/flag-es.webp, ./assets/images/flag-es-2x.webp 2x" type="image/webp" />
+                        <img
+                                srcset="./assets/images/flag-es.png, ./assets/images/flag-es-2x.png 2x"
+                                class="flag__image"
+                                src="./assets/images/flag-es.png"
+                                alt="Logotype"
+                        />
+                    </picture>
+                    ES room
+                </div>
+            </div>
+            <div class="chat-form__field">
+                <textarea class="chat-form__textarea"></textarea>
+                <svg class="smiles-trigger chat-form__smiles-trigger" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5001 22.5C14.4175 22.5 17.2154 21.3411 19.2783 19.2782C21.3412 17.2153 22.5002 14.4174 22.5002 11.5C22.5002 8.58262 21.3412 5.78473 19.2783 3.72183C17.2154 1.65893 14.4175 0.5 11.5001 0.5C8.58268 0.5 5.78477 1.65893 3.72185 3.72183C1.65893 5.78473 0.5 8.58262 0.5 11.5C0.5 14.4174 1.65893 17.2153 3.72185 19.2782C5.78477 21.3411 8.58268 22.5 11.5001 22.5Z" fill="#FFC701"/>
+                    <path d="M10.1121 9.0801C10.1121 10.1731 9.49079 11.0601 8.72524 11.0601C7.95969 11.0601 7.33838 10.1731 7.33838 9.0801C7.33838 7.98714 7.95969 7.1001 8.72524 7.1001C9.49079 7.1001 10.1121 7.98714 10.1121 9.0801ZM15.6595 9.0801C15.6595 10.1731 15.0382 11.0601 14.2727 11.0601C13.5071 11.0601 12.8858 10.1731 12.8858 9.0801C12.8858 7.98714 13.5071 7.1001 14.2727 7.1001C15.0382 7.1001 15.6595 7.98714 15.6595 9.0801Z" fill="#161B2A"/>
+                    <path d="M6.3467 13.8049C6.50596 13.7264 6.69523 13.7051 6.87287 13.7458C7.05051 13.7864 7.20196 13.8856 7.29392 14.0216C7.71984 14.6519 8.33275 15.1753 9.07095 15.539C9.80914 15.9028 10.6466 16.0941 11.4989 16.0937C12.3512 16.0941 13.1886 15.9028 13.9268 15.539C14.665 15.1753 15.2779 14.6519 15.7038 14.0216C15.749 13.9537 15.8095 13.8941 15.8818 13.8463C15.9541 13.7985 16.0367 13.7633 16.125 13.7428C16.2132 13.7224 16.3054 13.717 16.396 13.7271C16.4867 13.7372 16.5742 13.7624 16.6534 13.8015C16.7326 13.8405 16.8019 13.8926 16.8575 13.9546C16.913 14.0166 16.9537 14.0874 16.9771 14.1629C17.0004 14.2384 17.0061 14.317 16.9937 14.3944C16.9813 14.4718 16.9511 14.5463 16.9049 14.6136C16.3572 15.4239 15.5692 16.0968 14.6202 16.5645C13.6712 17.0321 12.5947 17.2781 11.4989 17.2777C10.4031 17.2781 9.32655 17.0321 8.37754 16.5645C7.42852 16.0968 6.64054 15.4239 6.0929 14.6136C6.00095 14.4776 5.97603 14.316 6.02363 14.1644C6.07122 14.0127 6.18743 13.8834 6.3467 13.8049Z" fill="#161B2A"/>
+                </svg>
+
+            </div>
+            <div class="rules chat-form__rules">
+                Chat rules
+                <svg class="rules__icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.90625 0.5C6.52178 0.5 5.1684 0.910543 4.01726 1.67971C2.86612 2.44888 1.96891 3.54213 1.4391 4.82122C0.909283 6.1003 0.77066 7.50776 1.04076 8.86563C1.31085 10.2235 1.97754 11.4708 2.95651 12.4497C3.93547 13.4287 5.18275 14.0954 6.54062 14.3655C7.89849 14.6356 9.30595 14.497 10.585 13.9672C11.8641 13.4373 12.9573 12.5401 13.7266 11.389C14.4958 10.2379 14.9062 8.88447 14.9062 7.5C14.904 5.64416 14.1658 3.86495 12.8535 2.55267C11.5413 1.24039 9.76209 0.502189 7.90625 0.5Z" fill="white"/>
+                    <path d="M10.5975 6.04552C10.5982 6.44222 10.5094 6.83397 10.3376 7.19154C10.1658 7.54911 9.91548 7.86327 9.60533 8.11061L9.60424 8.11148C9.14186 8.46979 8.82918 8.9872 8.72699 9.56317L8.71234 9.6457H8.62852H7.33543H7.22331L7.23609 9.53431C7.29387 9.03043 7.45197 8.54322 7.70105 8.10142C7.94999 7.65985 8.28477 7.27258 8.68568 6.96239C8.82983 6.84686 8.94465 6.6989 9.02078 6.53057C9.09702 6.36199 9.1323 6.17776 9.12372 5.99294C9.11514 5.80812 9.06296 5.62795 8.97143 5.46716C8.87993 5.30641 8.7517 5.16959 8.59723 5.06787C8.42461 4.95508 8.22601 4.8883 8.02031 4.8739C7.81469 4.85951 7.6088 4.89793 7.4222 4.98551C7.22423 5.08048 7.05809 5.2309 6.94396 5.41849C6.82976 5.60619 6.77256 5.82303 6.7793 6.04264L6.77939 6.0457C6.77939 6.241 6.70176 6.4283 6.56367 6.56639C6.42557 6.70449 6.23828 6.78207 6.04298 6.78207C5.84768 6.78207 5.66039 6.70449 5.52229 6.56639C5.38443 6.42853 5.30687 6.24162 5.30662 6.04667C5.29697 5.53826 5.43733 5.03826 5.71019 4.60915C5.98321 4.17978 6.37677 3.84043 6.84163 3.63355C7.25311 3.44968 7.70426 3.37237 8.15348 3.40875C8.60273 3.44514 9.03559 3.59407 9.41212 3.8418C9.77617 4.08279 10.0751 4.4103 10.2819 4.79481C10.4887 5.17929 10.5971 5.60897 10.5975 6.04552ZM10.5975 6.04552C10.5975 6.04549 10.5975 6.04556 10.5975 6.04552V6.04552ZM8.68843 10.5003V10.4003H8.58843H7.31571H7.21571V10.5003V11.773V11.873H7.31571H8.58843H8.68843V11.773V10.5003ZM9.54298 8.03243C9.06098 8.40594 8.73505 8.9453 8.62852 9.5457L9.54298 8.03243Z" fill="#161B2A"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.14555 3.50842C7.71307 3.4734 7.27872 3.54783 6.88257 3.72485C6.43568 3.92373 6.05719 4.25003 5.79472 4.66281C5.53241 5.07533 5.39747 5.55601 5.40675 6.04477L5.40678 6.04654C5.40698 6.21501 5.47401 6.37654 5.59315 6.49568C5.71249 6.61502 5.87435 6.68207 6.04313 6.68207C6.2119 6.68207 6.37376 6.61502 6.4931 6.49568C6.61212 6.37666 6.67916 6.21537 6.67953 6.04712L6.67949 6.04571M6.85867 5.36651C6.98287 5.16238 7.16366 4.99869 7.37909 4.89535C7.58113 4.80052 7.80481 4.75856 8.02744 4.77414C8.25015 4.78973 8.46518 4.86204 8.65207 4.98415M8.1617 3.30907C8.62768 3.34682 9.07667 3.5013 9.46723 3.75826C9.84503 4.00835 10.1555 4.34839 10.3702 4.74744C10.5847 5.14643 10.6973 5.59232 10.6977 6.04534C10.6977 6.04537 10.6977 6.04531 10.6977 6.04534L10.5977 6.04553L10.5978 6.14552L10.4978 6.1457L10.4977 6.04728C10.4981 6.42839 10.4126 6.80471 10.2476 7.14823C10.085 7.48666 9.84929 7.78466 9.55759 8.02081L9.48187 7.95338C8.98026 8.34209 8.64107 8.9034 8.5302 9.52823L8.57668 9.5457L7.33558 9.5457C7.39184 9.05509 7.54578 8.5807 7.7883 8.15053C8.03069 7.72058 8.35666 7.3435 8.74702 7.04148L8.74836 7.04042C8.90481 6.91504 9.02942 6.75446 9.11204 6.57178C9.19478 6.38882 9.23307 6.18888 9.22376 5.9883C9.21445 5.78773 9.15782 5.59219 9.05848 5.41769M7.33558 9.5457L7.22346 9.5457V9.6457L7.3228 9.6571L7.33558 9.5457ZM8.62542 9.56402L8.57668 9.5457H8.62867L8.54308 9.49398L8.71099 9.21612C8.82767 8.85675 9.02573 8.52899 9.28963 8.25858L9.45754 7.98071L9.54313 8.03243C9.54796 8.02857 9.55278 8.0247 9.55759 8.02081L9.62871 8.08415L9.6096 8.11578L9.60883 8.11705L9.44861 8.38218C9.19295 8.63896 9.00279 8.95365 8.89435 9.29939L8.71425 9.59742L8.71249 9.59675V9.6457L8.61402 9.62822L8.62542 9.56402ZM7.13689 9.52292C7.19619 9.00577 7.35845 8.50573 7.61408 8.05231C7.86943 7.59937 8.21278 7.2021 8.62393 6.88384C8.75549 6.77824 8.86029 6.64308 8.92981 6.48936C8.99955 6.33515 9.03182 6.16663 9.02397 5.99758C9.01612 5.82851 8.96839 5.66371 8.88467 5.51663C8.801 5.36963 8.68375 5.24451 8.54251 5.15147C8.3842 5.04808 8.20209 4.98686 8.01347 4.97365C7.825 4.96046 7.63628 4.99564 7.46521 5.07586C7.28487 5.16246 7.13353 5.29954 7.02954 5.47046C6.92541 5.64161 6.87325 5.83933 6.8794 6.03957L6.87958 6.0457C6.87958 6.26754 6.79136 6.48027 6.63453 6.6371C6.47767 6.79395 6.26495 6.88207 6.04313 6.88207C5.8213 6.88207 5.60858 6.79395 5.45172 6.6371C5.29535 6.48073 5.20728 6.26879 5.20677 6.04768C5.19692 5.51993 5.3427 5.00094 5.62595 4.55549C5.90951 4.10955 6.31825 3.7571 6.80104 3.54222C7.22783 3.35152 7.69577 3.27134 8.1617 3.30907M9.66782 8.18879L9.66564 8.19053C9.58889 8.25001 9.51644 8.31405 9.44861 8.38218L8.89435 9.29939C8.86558 9.39112 8.84256 9.48504 8.8256 9.58064L8.7963 9.7457H7.11133L7.13689 9.52292M10.5977 6.04553L10.5975 5.94552L10.4975 5.9457L10.4977 6.04025C10.4964 5.62204 10.3921 5.21055 10.194 4.84217C9.99506 4.47224 9.70741 4.15712 9.35716 3.92524C8.99469 3.6868 8.57801 3.54345 8.14555 3.50842M10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM7.11585 10.3002H8.78857V11.973H7.11585V10.3002ZM7.31586 10.5002H8.58858V11.773H7.31585L7.31586 10.5002Z" fill="#161B2A"/>
+                </svg>
+            </div>
+            <picture class="snow chat-form__snow chat-form__snow--left">
+                <source srcset="./assets/images/snow-1.webp, ./assets/images/snow-1-2x.webp 2x" type="image/webp" />
+                <img
+                        srcset="./assets/images/snow-1.png, ./assets/images/snow-1-2x.png 2x"
+                        class="snow__image"
+                        src="./assets/images/snow-1.png"
+                        alt="Snow"
+                />
+            </picture>
+            <picture class="snow chat-form__snow chat-form__snow--right">
+                <source srcset="./assets/images/snow-2.webp, ./assets/images/snow-2-2x.webp 2x" type="image/webp" />
+                <img
+                        srcset="./assets/images/snow-2.png, ./assets/images/snow-2-2x.png 2x"
+                        class="snow__image"
+                        src="./assets/images/snow-2.png"
+                        alt="Snow"
+                />
+            </picture>
+        </div>
+    </div>
     <div class="header-upper">
         <div class="social-links header-upper__social-links">
             <a href="#" class="social-links__link">
@@ -99,11 +274,11 @@
         </nav>
         <div class="header__actions">
             <div class="languages-toggle">
-                <picture class="flag-en languages-toggle__flag-en">
+                <picture class="flag flag--md languages-toggle__flag-en">
                     <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
                     <img
                             srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
-                            class="flag-en__image"
+                            class="flag__image"
                             src="./assets/images/flag-en.png"
                             alt="Logotype"
                     />

@@ -1,0 +1,28 @@
+.togglers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: $color-accent-55;
+    background-color: $color-accent-60;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+
+    &--active {
+      color: $color-light;
+      background-color: $color-accent-65;
+    }
+  }
+}

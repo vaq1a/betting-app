@@ -1,0 +1,19 @@
+.user-avatar {
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+  position: relative;
+  border: 0.2rem solid transparent;
+  border-radius: 50%;
+  // TODO: colors var
+  background: linear-gradient(180deg, #a1745c 0%, #5e3a2d 100%) border-box;
+  mask-composite: exclude;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 0.2rem solid $color-primary;
+    border-radius: 50%;
+  }
+}
