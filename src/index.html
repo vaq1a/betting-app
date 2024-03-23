@@ -6,22 +6,98 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/styles.min.css">
 </head>
 <body>
-    <div class="chat">
-        <div class="chat__header">
-            <div class="chat__title">
-                live chat
+    <div class="banners-slider">
+        <div class="banners-slider__wrapper swiper-wrapper">
+            <div class="banners-slider__slide swiper-slide">
+                <picture class="banners-slider__promo-banner promo-banner">
+                    <source srcset="./assets/images/main-banner.webp, ./assets/images/main-banner-2x.webp 2x" type="image/webp" />
+                    <img
+                            srcset="./assets/images/main-banner.jpg, ./assets/images/main-banner-2x.jpg 2x"
+                            class="promo-banner__image"
+                            src="./assets/images/main-banner.jpg"
+                            alt="Main banner"
+                    />
+                </picture>
             </div>
-            <div class="chat__users-count">
-                35 online
+            <div class="banners-slider__slide swiper-slide">
+                <picture class="banners-slider__promo-banner promo-banner">
+                    <source srcset="./assets/images/main-banner.webp, ./assets/images/main-banner-2x.webp 2x" type="image/webp" />
+                    <img
+                            srcset="./assets/images/main-banner.jpg, ./assets/images/main-banner-2x.jpg 2x"
+                            class="promo-banner__image"
+                            src="./assets/images/main-banner.jpg"
+                            alt="Main banner"
+                    />
+                </picture>
             </div>
         </div>
+        <div class="banners-slider__button banners-slider__button--prev">
+            <svg class="banners-slider__button-icon" aria-hidden="true" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.982 2.15136L10.0178 0.1875L3.01782 7.18764L10.0178 14.1875L11.982 12.2236L6.94597 7.18764L11.982 2.15136Z" fill="black"/>
+            </svg>
+        </div>
+        <div class="banners-slider__button banners-slider__button--next">
+            <svg class="banners-slider__button-icon" aria-hidden="true" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.01802 12.2236L4.98218 14.1875L11.9822 7.18736L4.98218 0.1875L3.01802 2.15138L8.05403 7.18736L3.01802 12.2236Z" fill="black"/>
+            </svg>
+        </div>
+        <picture class="snow banners-slider__snow banners-slider__snow--top-left">
+            <source srcset="./assets/images/snow-3.webp, ./assets/images/snow-3-2x.webp 2x" type="image/webp" />
+            <img
+                    srcset="./assets/images/snow-3.png, ./assets/images/snow-3-2x.png 2x"
+                    class="snow__image"
+                    src="./assets/images/snow-3.png"
+                    alt="Snow"
+            />
+        </picture>
+        <picture class="snow banners-slider__snow banners-slider__snow--top-right">
+            <source srcset="./assets/images/snow-4.webp, ./assets/images/snow-4-2x.webp 2x" type="image/webp" />
+            <img
+                    srcset="./assets/images/snow-4.png, ./assets/images/snow-4-2x.png 2x"
+                    class="snow__image"
+                    src="./assets/images/snow-4.png"
+                    alt="Snow"
+            />
+        </picture>
+        <picture class="snow banners-slider__snow banners-slider__snow--bottom-left">
+            <source srcset="./assets/images/snow-5.webp, ./assets/images/snow-5-2x.webp 2x" type="image/webp" />
+            <img
+                    srcset="./assets/images/snow-5.png, ./assets/images/snow-5-2x.png 2x"
+                    class="snow__image"
+                    src="./assets/images/snow-5.png"
+                    alt="Snow"
+            />
+        </picture>
+        <picture class="snow banners-slider__snow banners-slider__snow--bottom-right">
+            <source srcset="./assets/images/snow-6.webp, ./assets/images/snow-6-2x.webp 2x" type="image/webp" />
+            <img
+                    srcset="./assets/images/snow-6.png, ./assets/images/snow-6-2x.png 2x"
+                    class="snow__image"
+                    src="./assets/images/snow-6.png"
+                    alt="Snow"
+            />
+        </picture>
+    </div>
+    <div class="chat">
+        <div class="chat__header">
+            <h4 class="chat__title">
+                live chat
+            </h4>
+            <p class="chat__users-count">
+                35 online
+            </p>
+        </div>
         <div class="chat__body">
-            <div class="message">
-                <picture class="user-avatar">
-                    <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+            <div class="chat__message message">
+                <picture class="message__user-avatar user-avatar">
+                    <source srcset="./assets/images/avatar.webp, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
                     <img
                             srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
                             class="user-avatar__image"
@@ -31,7 +107,7 @@
                 </picture>
                 <div class="message__body">
                     <div class="message__header">
-                        <picture class="status-badge">
+                        <picture class="message__status-badge status-badge">
                             <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
                             <img
                                     srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
@@ -47,8 +123,8 @@
                     </div>
                 </div>
             </div>
-            <div class="message">
-                <div class="user-avatar">
+            <div class="chat__message message">
+                <div class="message__user-avatar user-avatar">
                     <picture class="user-avatar__wrapper">
                         <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
                         <img
@@ -61,7 +137,7 @@
                 </div>
                 <div class="message__body">
                     <div class="message__header">
-                        <picture class="status-badge">
+                        <picture class="message__status-badge status-badge">
                             <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
                             <img
                                     srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
@@ -77,8 +153,8 @@
                     </div>
                 </div>
             </div>
-            <div class="message">
-                <div class="user-avatar">
+            <div class="chat__message message">
+                <div class="message__user-avatar user-avatar">
                     <picture class="user-avatar__wrapper">
                         <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
                         <img
@@ -91,7 +167,7 @@
                 </div>
                 <div class="message__body">
                     <div class="message__header">
-                        <picture class="status-badge">
+                        <picture class="message__status-badge status-badge">
                             <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
                             <img
                                     srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
@@ -108,10 +184,10 @@
                 </div>
             </div>
         </div>
-        <div class="chat-form">
-            <div class="togglers chat-form__togglers">
+        <div class="chat__chat-form chat-form">
+            <div class="chat-form__togglers togglers">
                 <div class="togglers__item togglers__item--active">
-                    <picture class="flag flag--sm">
+                    <picture class="togglers__flag flag flag--sm">
                         <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
                         <img
                                 srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
@@ -123,7 +199,7 @@
                     EN room
                 </div>
                 <div class="togglers__item">
-                    <picture class="flag flag--sm">
+                    <picture class="togglers__flag flag flag--sm">
                         <source srcset="./assets/images/flag-ru.webp, ./assets/images/flag-ru-2x.webp 2x" type="image/webp" />
                         <img
                                 srcset="./assets/images/flag-ru.png, ./assets/images/flag-ru-2x.png 2x"
@@ -135,7 +211,7 @@
                     RU room
                 </div>
                 <div class="togglers__item">
-                    <picture class="flag flag--sm">
+                    <picture class="togglers__flag flag flag--sm">
                         <source srcset="./assets/images/flag-es.webp, ./assets/images/flag-es-2x.webp 2x" type="image/webp" />
                         <img
                                 srcset="./assets/images/flag-es.png, ./assets/images/flag-es-2x.png 2x"
@@ -149,14 +225,14 @@
             </div>
             <div class="chat-form__field">
                 <textarea class="chat-form__textarea"></textarea>
-                <svg class="smiles-trigger chat-form__smiles-trigger" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="chat-form__smiles-trigger smiles-trigger" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.5001 22.5C14.4175 22.5 17.2154 21.3411 19.2783 19.2782C21.3412 17.2153 22.5002 14.4174 22.5002 11.5C22.5002 8.58262 21.3412 5.78473 19.2783 3.72183C17.2154 1.65893 14.4175 0.5 11.5001 0.5C8.58268 0.5 5.78477 1.65893 3.72185 3.72183C1.65893 5.78473 0.5 8.58262 0.5 11.5C0.5 14.4174 1.65893 17.2153 3.72185 19.2782C5.78477 21.3411 8.58268 22.5 11.5001 22.5Z" fill="#FFC701"/>
                     <path d="M10.1121 9.0801C10.1121 10.1731 9.49079 11.0601 8.72524 11.0601C7.95969 11.0601 7.33838 10.1731 7.33838 9.0801C7.33838 7.98714 7.95969 7.1001 8.72524 7.1001C9.49079 7.1001 10.1121 7.98714 10.1121 9.0801ZM15.6595 9.0801C15.6595 10.1731 15.0382 11.0601 14.2727 11.0601C13.5071 11.0601 12.8858 10.1731 12.8858 9.0801C12.8858 7.98714 13.5071 7.1001 14.2727 7.1001C15.0382 7.1001 15.6595 7.98714 15.6595 9.0801Z" fill="#161B2A"/>
                     <path d="M6.3467 13.8049C6.50596 13.7264 6.69523 13.7051 6.87287 13.7458C7.05051 13.7864 7.20196 13.8856 7.29392 14.0216C7.71984 14.6519 8.33275 15.1753 9.07095 15.539C9.80914 15.9028 10.6466 16.0941 11.4989 16.0937C12.3512 16.0941 13.1886 15.9028 13.9268 15.539C14.665 15.1753 15.2779 14.6519 15.7038 14.0216C15.749 13.9537 15.8095 13.8941 15.8818 13.8463C15.9541 13.7985 16.0367 13.7633 16.125 13.7428C16.2132 13.7224 16.3054 13.717 16.396 13.7271C16.4867 13.7372 16.5742 13.7624 16.6534 13.8015C16.7326 13.8405 16.8019 13.8926 16.8575 13.9546C16.913 14.0166 16.9537 14.0874 16.9771 14.1629C17.0004 14.2384 17.0061 14.317 16.9937 14.3944C16.9813 14.4718 16.9511 14.5463 16.9049 14.6136C16.3572 15.4239 15.5692 16.0968 14.6202 16.5645C13.6712 17.0321 12.5947 17.2781 11.4989 17.2777C10.4031 17.2781 9.32655 17.0321 8.37754 16.5645C7.42852 16.0968 6.64054 15.4239 6.0929 14.6136C6.00095 14.4776 5.97603 14.316 6.02363 14.1644C6.07122 14.0127 6.18743 13.8834 6.3467 13.8049Z" fill="#161B2A"/>
                 </svg>
 
             </div>
-            <div class="rules chat-form__rules">
+            <div class="chat-form__rules rules">
                 Chat rules
                 <svg class="rules__icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.90625 0.5C6.52178 0.5 5.1684 0.910543 4.01726 1.67971C2.86612 2.44888 1.96891 3.54213 1.4391 4.82122C0.909283 6.1003 0.77066 7.50776 1.04076 8.86563C1.31085 10.2235 1.97754 11.4708 2.95651 12.4497C3.93547 13.4287 5.18275 14.0954 6.54062 14.3655C7.89849 14.6356 9.30595 14.497 10.585 13.9672C11.8641 13.4373 12.9573 12.5401 13.7266 11.389C14.4958 10.2379 14.9062 8.88447 14.9062 7.5C14.904 5.64416 14.1658 3.86495 12.8535 2.55267C11.5413 1.24039 9.76209 0.502189 7.90625 0.5Z" fill="white"/>
@@ -164,7 +240,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.14555 3.50842C7.71307 3.4734 7.27872 3.54783 6.88257 3.72485C6.43568 3.92373 6.05719 4.25003 5.79472 4.66281C5.53241 5.07533 5.39747 5.55601 5.40675 6.04477L5.40678 6.04654C5.40698 6.21501 5.47401 6.37654 5.59315 6.49568C5.71249 6.61502 5.87435 6.68207 6.04313 6.68207C6.2119 6.68207 6.37376 6.61502 6.4931 6.49568C6.61212 6.37666 6.67916 6.21537 6.67953 6.04712L6.67949 6.04571M6.85867 5.36651C6.98287 5.16238 7.16366 4.99869 7.37909 4.89535C7.58113 4.80052 7.80481 4.75856 8.02744 4.77414C8.25015 4.78973 8.46518 4.86204 8.65207 4.98415M8.1617 3.30907C8.62768 3.34682 9.07667 3.5013 9.46723 3.75826C9.84503 4.00835 10.1555 4.34839 10.3702 4.74744C10.5847 5.14643 10.6973 5.59232 10.6977 6.04534C10.6977 6.04537 10.6977 6.04531 10.6977 6.04534L10.5977 6.04553L10.5978 6.14552L10.4978 6.1457L10.4977 6.04728C10.4981 6.42839 10.4126 6.80471 10.2476 7.14823C10.085 7.48666 9.84929 7.78466 9.55759 8.02081L9.48187 7.95338C8.98026 8.34209 8.64107 8.9034 8.5302 9.52823L8.57668 9.5457L7.33558 9.5457C7.39184 9.05509 7.54578 8.5807 7.7883 8.15053C8.03069 7.72058 8.35666 7.3435 8.74702 7.04148L8.74836 7.04042C8.90481 6.91504 9.02942 6.75446 9.11204 6.57178C9.19478 6.38882 9.23307 6.18888 9.22376 5.9883C9.21445 5.78773 9.15782 5.59219 9.05848 5.41769M7.33558 9.5457L7.22346 9.5457V9.6457L7.3228 9.6571L7.33558 9.5457ZM8.62542 9.56402L8.57668 9.5457H8.62867L8.54308 9.49398L8.71099 9.21612C8.82767 8.85675 9.02573 8.52899 9.28963 8.25858L9.45754 7.98071L9.54313 8.03243C9.54796 8.02857 9.55278 8.0247 9.55759 8.02081L9.62871 8.08415L9.6096 8.11578L9.60883 8.11705L9.44861 8.38218C9.19295 8.63896 9.00279 8.95365 8.89435 9.29939L8.71425 9.59742L8.71249 9.59675V9.6457L8.61402 9.62822L8.62542 9.56402ZM7.13689 9.52292C7.19619 9.00577 7.35845 8.50573 7.61408 8.05231C7.86943 7.59937 8.21278 7.2021 8.62393 6.88384C8.75549 6.77824 8.86029 6.64308 8.92981 6.48936C8.99955 6.33515 9.03182 6.16663 9.02397 5.99758C9.01612 5.82851 8.96839 5.66371 8.88467 5.51663C8.801 5.36963 8.68375 5.24451 8.54251 5.15147C8.3842 5.04808 8.20209 4.98686 8.01347 4.97365C7.825 4.96046 7.63628 4.99564 7.46521 5.07586C7.28487 5.16246 7.13353 5.29954 7.02954 5.47046C6.92541 5.64161 6.87325 5.83933 6.8794 6.03957L6.87958 6.0457C6.87958 6.26754 6.79136 6.48027 6.63453 6.6371C6.47767 6.79395 6.26495 6.88207 6.04313 6.88207C5.8213 6.88207 5.60858 6.79395 5.45172 6.6371C5.29535 6.48073 5.20728 6.26879 5.20677 6.04768C5.19692 5.51993 5.3427 5.00094 5.62595 4.55549C5.90951 4.10955 6.31825 3.7571 6.80104 3.54222C7.22783 3.35152 7.69577 3.27134 8.1617 3.30907M9.66782 8.18879L9.66564 8.19053C9.58889 8.25001 9.51644 8.31405 9.44861 8.38218L8.89435 9.29939C8.86558 9.39112 8.84256 9.48504 8.8256 9.58064L8.7963 9.7457H7.11133L7.13689 9.52292M10.5977 6.04553L10.5975 5.94552L10.4975 5.9457L10.4977 6.04025C10.4964 5.62204 10.3921 5.21055 10.194 4.84217C9.99506 4.47224 9.70741 4.15712 9.35716 3.92524C8.99469 3.6868 8.57801 3.54345 8.14555 3.50842M10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM7.11585 10.3002H8.78857V11.973H7.11585V10.3002ZM7.31586 10.5002H8.58858V11.773H7.31585L7.31586 10.5002Z" fill="#161B2A"/>
                 </svg>
             </div>
-            <picture class="snow chat-form__snow chat-form__snow--left">
+            <picture class="chat-form__snow chat-form__snow--left snow">
                 <source srcset="./assets/images/snow-1.webp, ./assets/images/snow-1-2x.webp 2x" type="image/webp" />
                 <img
                         srcset="./assets/images/snow-1.png, ./assets/images/snow-1-2x.png 2x"
@@ -173,7 +249,7 @@
                         alt="Snow"
                 />
             </picture>
-            <picture class="snow chat-form__snow chat-form__snow--right">
+            <picture class="chat-form__snow chat-form__snow--right snow">
                 <source srcset="./assets/images/snow-2.webp, ./assets/images/snow-2-2x.webp 2x" type="image/webp" />
                 <img
                         srcset="./assets/images/snow-2.png, ./assets/images/snow-2-2x.png 2x"
@@ -185,7 +261,7 @@
         </div>
     </div>
     <div class="header-upper">
-        <div class="social-links header-upper__social-links">
+        <div class="header-upper__social-links social-links">
             <a href="#" class="social-links__link">
                 <svg class="social-links__icon" aria-hidden="true" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.48286 1.91894C6.35829 1.56759 6.23257 1.21334 6.23029 1.2087C6.17029 1.07245 6.03143 0.986636 5.88514 1.00171C5.79257 1.00925 3.60229 1.20058 2.19886 2.34568C1.46514 3.03331 0 7.05362 0 10.5295C0 10.591 0.0154286 10.6506 0.0457143 10.704C1.05771 12.5072 3.81657 12.9791 4.44514 12.9994C4.44914 13 4.45257 13 4.456 13C4.56686 13 4.67086 12.9461 4.73714 12.855L5.41714 11.9204C4.29371 11.747 4.09086 11.521 4.04343 11.4856C3.78971 11.296 3.60229 11.0304 3.82971 10.6953C4.00457 10.435 4.37143 10.3492 4.65257 10.4958C4.94057 10.6321 5.71143 11.0705 8 11.0589C10.2726 11.0519 11.2703 10.5689 11.2846 10.5585C11.6663 10.384 11.964 10.4558 12.1497 10.7145C12.3709 11.0664 12.2131 11.3046 11.9606 11.4937C11.9131 11.529 11.7983 11.6282 10.5914 11.9181L11.2629 12.8545C11.3286 12.9461 11.4331 12.9994 11.544 12.9994C11.548 12.9994 11.5514 12.9994 11.5549 12.9989C12.184 12.9786 14.9429 12.5066 15.9543 10.7034C15.9846 10.6501 16 10.5904 16 10.5289C16 7.05362 14.5349 3.03331 13.7829 2.3306C12.3977 1.20116 10.2074 1.00983 10.1149 1.00171C9.96856 0.988956 9.82968 1.07303 9.76968 1.2087C9.76744 1.21334 9.64512 1.57339 9.52688 1.92069C9.52688 1.92069 8.59488 1.78212 8 1.78212C7.40514 1.78212 6.48286 1.91894 6.48286 1.91894ZM5.71429 9.31944C5.08286 9.31944 4.57143 8.54659 4.57143 7.59225C4.57143 6.6379 5.08286 5.86504 5.71429 5.86504C6.348 5.76937 6.84343 6.6379 6.85714 7.59225C6.85714 8.54659 6.34571 9.31944 5.71429 9.31944ZM10.2857 9.31944C9.65432 9.31944 9.14288 8.54138 9.14288 7.58181C9.14288 6.62225 9.65432 5.84416 10.2857 5.84416C10.9171 5.84416 11.4286 6.62225 11.4286 7.58181C11.4286 8.54138 10.9171 9.31944 10.2857 9.31944Z" fill="currentColor"/>
@@ -197,7 +273,7 @@
                 </svg>
             </a>
         </div>
-        <nav class="extra-navigation header-upper__navigation">
+        <nav class="header-upper__extra-navigation extra-navigation">
             <ul class="extra-navigation__list">
                 <li class="extra-navigation__item">
                     <a href="#" class="extra-navigation__link">
@@ -218,8 +294,8 @@
         </nav>
     </div>
     <header class="header">
-        <a href="#" class="header__logo-md">
-            <picture class="logo-md">
+        <a href="#" class="header__link-logo">
+            <picture class="header__logo-md logo-md">
                 <source srcset="./assets/images/logotype.webp, ./assets/images/logotype-2x.webp 2x" type="image/webp" />
                 <img
                         srcset="./assets/images/logotype.png, ./assets/images/logotype-2x.png 2x"
@@ -229,7 +305,7 @@
                 />
             </picture>
         </a>
-        <nav class="navigation">
+        <nav class="header__navigation navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href="#" class="navigation__link navigation__link--active">
@@ -273,8 +349,8 @@
             </ul>
         </nav>
         <div class="header__actions">
-            <div class="languages-toggle">
-                <picture class="flag flag--md languages-toggle__flag-en">
+            <div class="header__languages-toggle languages-toggle">
+                <picture class="languages-toggle__flag flag flag--md">
                     <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
                     <img
                             srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
@@ -288,7 +364,7 @@
                     <path d="M0.5 6.87548C0.5 7.09136 0.580339 7.30729 0.740655 7.47194L5.79049 12.6532C6.11172 12.9828 6.63254 12.9828 6.95364 12.6532C7.27473 12.3237 7.27473 11.7895 6.95364 11.4598L2.48533 6.87548L6.95332 2.2909C7.27442 1.9615 7.27442 1.4271 6.95332 1.0977C6.63222 0.767901 6.11157 0.767901 5.79034 1.0977L0.740472 6.27885C0.580183 6.44358 0.5 6.65952 0.5 6.87548Z" fill="currentColor"/>
                 </svg>
             </div>
-            <div class="hamburger">
+            <div class="header__hamburger hamburger">
                 <div class="hamburger__line"></div>
                 <div class="hamburger__line"></div>
                 <div class="hamburger__line"></div>
@@ -296,8 +372,8 @@
         </div>
     </header>
     <div class="header-aside header-aside--width-limitation">
-        <a href="#" class="header-aside__logo-sm">
-            <picture class="logo-sm">
+        <a href="#" class="header-aside__link-logo">
+            <picture class="header-aside__logo-sm logo-sm">
                 <source srcset="./assets/images/logotype-small.webp, ./assets/images/logotype-small-2x.webp 2x" type="image/webp" />
                 <img
                         srcset="./assets/images/logotype-small.png, ./assets/images/logotype-small-2x.png 2x"
@@ -307,7 +383,7 @@
                 />
             </picture>
         </a>
-        <nav class="aside-navigation">
+        <nav class="header-aside__aside-navigation aside-navigation">
             <ul class="aside-navigation__list">
                 <li class="aside-navigation__item">
                     <a href="#" class="aside-navigation__link">
@@ -363,6 +439,7 @@
             </ul>
         </nav>
     </div>
+    <script src="./js/libs/swiper.js"></script>
     <script src="./js/bundle.js"></script>
 </body>
 </html>

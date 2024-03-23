@@ -1,0 +1,72 @@
+.banners-slider {
+  position: relative;
+  min-height: 16.9rem;
+  width: 100%;
+  background-color: $color-accent-95;
+  aspect-ratio: 6/1;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    background: repeating-linear-gradient(
+                    135deg,
+                    $color-active-100,
+                    $color-active-100 1.2rem,
+                    $color-active-60 1.2rem,
+                    $color-active-60 2.4rem
+    );
+    position: absolute;
+    top: calc(50% - 2rem);
+    z-index: 2;
+
+    &-icon {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+
+    &--prev {
+      left: -2.4rem;
+    }
+
+    &--next {
+      right: -2.4rem;
+    }
+  }
+
+  &__snow {
+    position: absolute;
+    z-index: 3;
+
+    &--top-left {
+      width: 33.8rem;
+      height: 6.9rem;
+      top: -2.4rem;
+      left: 1.6rem;
+    }
+
+    &--top-right {
+      width: 15.2rem;
+      height: 7.1rem;
+      top: -2.4rem;
+      right: 3rem;
+    }
+
+    &--bottom-left {
+      width: 14.5rem;
+      height: 4.1rem;
+      bottom: -2.4rem;
+      left: 0;
+    }
+
+    &--bottom-right {
+      width: 20.4rem;
+      height: 4.4rem;
+      bottom: -2.4rem;
+      right: 0;
+    }
+  }
+}

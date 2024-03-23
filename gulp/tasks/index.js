@@ -1,4 +1,8 @@
-import {cleanAll, cleanHtml, cleanImages, cleanStyles, cleanFonts} from "./clean.js"
+import {
+    cleanAll, cleanHtml,
+    cleanImages, cleanStyles,
+    cleanFonts, cleanScripts
+} from "./clean.js"
 import styles from "./styles.js"
 import reload from "./reload.js"
 import images from "./images.js"
@@ -13,6 +17,7 @@ export {
     cleanImages,
     cleanStyles,
     cleanFonts,
+    cleanScripts,
     styles,
     reload,
     images,

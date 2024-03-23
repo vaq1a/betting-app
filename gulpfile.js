@@ -6,6 +6,7 @@ import {
     cleanImages,
     cleanStyles,
     cleanFonts,
+    cleanScripts,
     styles,
     reload,
     images,
@@ -28,6 +29,7 @@ function devServer() {
     })
 
     watch(PATHS["styles"].src, series(cleanStyles, styles, reload))
+    watch(PATHS["scripts"].src, series(cleanScripts, scripts, reload))
     watch(PATHS["fonts"].src, series(cleanFonts, fonts, reload))
     watch(PATHS["images"].src, series(cleanImages, images, reload))
     watch(PATHS["staticFiles"].src, series(cleanHtml, staticFiles, scripts, reload))

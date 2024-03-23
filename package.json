@@ -26,5 +26,8 @@
     "gulp-shell": "^0.8.0",
     "gulp-webp": "^5.0.0",
     "sass": "^1.71.1"
+  },
+  "dependencies": {
+    "swiper": "^11.0.7"
   }
 }
