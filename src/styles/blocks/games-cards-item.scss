@@ -1,0 +1,56 @@
+.games-cards-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  // TODO: color
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  background-color: $color-accent-70;
+  border: 1px solid $color-accent-57;
+  border-radius: 0.4rem;
+
+  &__logotypes {
+    display: flex;
+  }
+
+  &__promo-logo {
+    & + & {
+      margin-left: -1.2rem;
+    }
+  }
+
+  &__top, &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__stats {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sun-stat, &__chip-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  &__sun-stat {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    color: $color-accent-30;
+    padding-right: 1.1rem;
+    margin-right: 1.1rem;
+    border-right: 1px solid $color-accent-40;
+  }
+
+  &__chip-stat {
+    font-family: $font-oswald;
+    font-weight: 600;
+    color: $color-light;
+  }
+}

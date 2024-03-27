@@ -9,6 +9,9 @@
 @import 'blocks/content';
 @import 'blocks/main';
 
+@import 'blocks/button';
+@import 'blocks/info-label';
+
 @import 'blocks/header';
 @import 'blocks/logo-md';
 @import 'blocks/navigation';
@@ -37,3 +40,11 @@
 @import 'blocks/promo-banner';
 @import 'blocks/banners-slider';
 @import 'blocks/banners';
+
+@import 'blocks/games';
+@import 'blocks/promo-icon';
+@import 'blocks/games-title';
+@import 'blocks/games-info-cards';
+@import 'blocks/games-info-cards-item';
+@import 'blocks/games-cards';
+@import 'blocks/games-cards-item';

@@ -10,7 +10,16 @@
     overflow-y: auto;
   }
 
+  &__banners-slider {
+    margin-top: 3.6rem;
+  }
+
   &__banners {
     margin-top: 3.6rem;
+  }
+
+  &__games {
+    display: flex;
+    flex-direction: column;
   }
 }

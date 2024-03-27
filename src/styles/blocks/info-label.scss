@@ -1,0 +1,18 @@
+.info-label {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: $font-segoe-ui;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: $color-accent-30;
+  white-space: nowrap;
+
+  &__icon {
+    width: 1.6rem;
+    min-width: 1.6rem;
+    height: 1.6rem;
+  }
+}

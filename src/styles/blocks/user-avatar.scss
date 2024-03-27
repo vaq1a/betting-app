@@ -5,8 +5,7 @@
   height: 3.2rem;
   border: 0.2rem solid transparent;
   border-radius: 50%;
-  // TODO: colors var
-  background: linear-gradient(180deg, #a1745c 0%, #5e3a2d 100%) border-box;
+  background: linear-gradient(180deg, $color-accent-35 0%, $color-accent-63 100%) border-box;
   mask-composite: exclude;
 
   &__image {
