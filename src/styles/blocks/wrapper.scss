@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+
+  &__header-aside {
+    width: 8.8rem;
+    height: 100%;
+    border-right: 1px solid $color-border;
+  }
+}

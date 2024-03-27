@@ -13,185 +13,344 @@
     <link rel="stylesheet" href="./styles/styles.min.css">
 </head>
 <body>
-    <div class="banners">
-        <picture class="banners__item banners__item--first">
-            <source srcset="./assets/images/plinko-banner.webp, ./assets/images/plinko-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/plinko-banner.png, ./assets/images/plinko-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/plinko-banner.png"
-                    alt="Plinko banner"
-            />
-        </picture>
-        <picture class="banners__item banners__item--second">
-            <source srcset="./assets/images/wheel-banner.webp, ./assets/images/wheel-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/wheel-banner.png, ./assets/images/wheel-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/wheel-banner.png"
-                    alt="Wheel banner"
-            />
-        </picture>
-        <picture class="banners__item banners__item--third">
-            <source srcset="./assets/images/mines-banner.webp, ./assets/images/mines-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/mines-banner.png, ./assets/images/mines-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/mines-banner.png"
-                    alt="Mines banner"
-            />
-        </picture>
-        <picture class="banners__item banners__item--fourth">
-            <source srcset="./assets/images/jackpot-banner.webp, ./assets/images/jackpot-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/jackpot-banner.png, ./assets/images/jackpot-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/jackpot-banner.png"
-                    alt="Jackpot banner"
-            />
-        </picture>
-        <picture class="banners__item banners__item--fifth">
-            <source srcset="./assets/images/pvpmines-banner.webp, ./assets/images/pvpmines-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/pvpmines-banner.png, ./assets/images/pvpmines-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/pvpmines-banner.png"
-                    alt="PVP Mines banner"
-            />
-        </picture>
-        <picture class="banners__item banners__item--sixth">
-            <source srcset="./assets/images/coinflip-banner.webp, ./assets/images/coinflip-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/coinflip-banner.png, ./assets/images/coinflip-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/coinflip-banner.png"
-                    alt="Coinflip banner"
-            />
-        </picture>
-        <picture class="banners__item banners__item--seventh">
-            <source srcset="./assets/images/upgrader-banner.webp, ./assets/images/upgrader-banner-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/upgrader-banner.png, ./assets/images/upgrader-banner-2x.png 2x"
-                    class="banners__image"
-                    src="./assets/images/upgrader-banner.png"
-                    alt="Upgrader banner"
-            />
-        </picture>
-    </div>
-    <div class="banners-slider">
-        <div class="banners-slider__wrapper swiper-wrapper">
-            <div class="banners-slider__slide swiper-slide">
-                <picture class="banners-slider__promo-banner promo-banner">
-                    <source srcset="./assets/images/main-banner.webp, ./assets/images/main-banner-2x.webp 2x" type="image/webp" />
-                    <img
-                            srcset="./assets/images/main-banner.jpg, ./assets/images/main-banner-2x.jpg 2x"
-                            class="promo-banner__image"
-                            src="./assets/images/main-banner.jpg"
-                            alt="Main banner"
-                    />
-                </picture>
+    <div class="layout">
+        <div class="layout__main main">
+            <div class="main__header-upper header-upper">
+                <div class="header-upper__social-links social-links">
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__icon" aria-hidden="true" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.48286 1.91894C6.35829 1.56759 6.23257 1.21334 6.23029 1.2087C6.17029 1.07245 6.03143 0.986636 5.88514 1.00171C5.79257 1.00925 3.60229 1.20058 2.19886 2.34568C1.46514 3.03331 0 7.05362 0 10.5295C0 10.591 0.0154286 10.6506 0.0457143 10.704C1.05771 12.5072 3.81657 12.9791 4.44514 12.9994C4.44914 13 4.45257 13 4.456 13C4.56686 13 4.67086 12.9461 4.73714 12.855L5.41714 11.9204C4.29371 11.747 4.09086 11.521 4.04343 11.4856C3.78971 11.296 3.60229 11.0304 3.82971 10.6953C4.00457 10.435 4.37143 10.3492 4.65257 10.4958C4.94057 10.6321 5.71143 11.0705 8 11.0589C10.2726 11.0519 11.2703 10.5689 11.2846 10.5585C11.6663 10.384 11.964 10.4558 12.1497 10.7145C12.3709 11.0664 12.2131 11.3046 11.9606 11.4937C11.9131 11.529 11.7983 11.6282 10.5914 11.9181L11.2629 12.8545C11.3286 12.9461 11.4331 12.9994 11.544 12.9994C11.548 12.9994 11.5514 12.9994 11.5549 12.9989C12.184 12.9786 14.9429 12.5066 15.9543 10.7034C15.9846 10.6501 16 10.5904 16 10.5289C16 7.05362 14.5349 3.03331 13.7829 2.3306C12.3977 1.20116 10.2074 1.00983 10.1149 1.00171C9.96856 0.988956 9.82968 1.07303 9.76968 1.2087C9.76744 1.21334 9.64512 1.57339 9.52688 1.92069C9.52688 1.92069 8.59488 1.78212 8 1.78212C7.40514 1.78212 6.48286 1.91894 6.48286 1.91894ZM5.71429 9.31944C5.08286 9.31944 4.57143 8.54659 4.57143 7.59225C4.57143 6.6379 5.08286 5.86504 5.71429 5.86504C6.348 5.76937 6.84343 6.6379 6.85714 7.59225C6.85714 8.54659 6.34571 9.31944 5.71429 9.31944ZM10.2857 9.31944C9.65432 9.31944 9.14288 8.54138 9.14288 7.58181C9.14288 6.62225 9.65432 5.84416 10.2857 5.84416C10.9171 5.84416 11.4286 6.62225 11.4286 7.58181C11.4286 8.54138 10.9171 9.31944 10.2857 9.31944Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links__link">
+                        <svg class="social-links__icon" aria-hidden="true" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8001 2.03891C15.227 2.29997 14.6098 2.47644 13.9624 2.55529C14.6235 2.14969 15.1308 1.50644 15.3698 0.740337C14.7508 1.11595 14.0669 1.38919 13.3361 1.53569C12.7537 0.898164 11.9213 0.5 11.0002 0.5C9.23391 0.5 7.80092 1.96944 7.80092 3.78171C7.80092 4.03899 7.82835 4.28871 7.88328 4.52917C5.2235 4.39194 2.86571 3.08679 1.28609 1.09901C1.01054 1.58542 0.852954 2.14969 0.852954 2.75066C0.852954 3.88872 1.41797 4.89333 2.27682 5.48211C1.75312 5.46614 1.25855 5.31684 0.826386 5.07273V5.11307C0.826386 6.70366 1.92972 8.03038 3.39477 8.33094C3.12652 8.40796 2.84353 8.44644 2.5514 8.44644C2.34543 8.44644 2.14397 8.42675 1.94885 8.38821C2.35627 9.69152 3.53749 10.6408 4.93843 10.6662C3.84327 11.5469 2.46255 12.0718 0.963617 12.0718C0.705365 12.0718 0.449916 12.0567 0.199951 12.0266C1.6165 12.9562 3.29946 13.4999 5.10601 13.4999C10.9937 13.4999 14.2121 8.49987 14.2121 4.16281C14.2121 4.0201 14.2093 3.87739 14.2038 3.73747C14.8295 3.2746 15.3724 2.69716 15.8001 2.03891Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+                <nav class="header-upper__extra-navigation extra-navigation">
+                    <ul class="extra-navigation__list">
+                        <li class="extra-navigation__item">
+                            <a href="#" class="extra-navigation__link">
+                                LEADERBOARD
+                            </a>
+                        </li>
+                        <li class="extra-navigation__item extra-navigation__item--active">
+                            <a href="#" class="extra-navigation__link">
+                                FREE CASE
+                            </a>
+                        </li>
+                        <li class="extra-navigation__item">
+                            <a href="#" class="extra-navigation__link">
+                                RAKEBACK
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="banners-slider__slide swiper-slide">
-                <picture class="banners-slider__promo-banner promo-banner">
-                    <source srcset="./assets/images/main-banner.webp, ./assets/images/main-banner-2x.webp 2x" type="image/webp" />
-                    <img
-                            srcset="./assets/images/main-banner.jpg, ./assets/images/main-banner-2x.jpg 2x"
-                            class="promo-banner__image"
-                            src="./assets/images/main-banner.jpg"
-                            alt="Main banner"
-                    />
-                </picture>
-            </div>
-        </div>
-        <div class="banners-slider__button banners-slider__button--prev">
-            <svg class="banners-slider__button-icon" aria-hidden="true" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.982 2.15136L10.0178 0.1875L3.01782 7.18764L10.0178 14.1875L11.982 12.2236L6.94597 7.18764L11.982 2.15136Z" fill="black"/>
-            </svg>
-        </div>
-        <div class="banners-slider__button banners-slider__button--next">
-            <svg class="banners-slider__button-icon" aria-hidden="true" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.01802 12.2236L4.98218 14.1875L11.9822 7.18736L4.98218 0.1875L3.01802 2.15138L8.05403 7.18736L3.01802 12.2236Z" fill="black"/>
-            </svg>
-        </div>
-        <picture class="snow banners-slider__snow banners-slider__snow--top-left">
-            <source srcset="./assets/images/snow-3.webp, ./assets/images/snow-3-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/snow-3.png, ./assets/images/snow-3-2x.png 2x"
-                    class="snow__image"
-                    src="./assets/images/snow-3.png"
-                    alt="Snow"
-            />
-        </picture>
-        <picture class="snow banners-slider__snow banners-slider__snow--top-right">
-            <source srcset="./assets/images/snow-4.webp, ./assets/images/snow-4-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/snow-4.png, ./assets/images/snow-4-2x.png 2x"
-                    class="snow__image"
-                    src="./assets/images/snow-4.png"
-                    alt="Snow"
-            />
-        </picture>
-        <picture class="snow banners-slider__snow banners-slider__snow--bottom-left">
-            <source srcset="./assets/images/snow-5.webp, ./assets/images/snow-5-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/snow-5.png, ./assets/images/snow-5-2x.png 2x"
-                    class="snow__image"
-                    src="./assets/images/snow-5.png"
-                    alt="Snow"
-            />
-        </picture>
-        <picture class="snow banners-slider__snow banners-slider__snow--bottom-right">
-            <source srcset="./assets/images/snow-6.webp, ./assets/images/snow-6-2x.webp 2x" type="image/webp" />
-            <img
-                    srcset="./assets/images/snow-6.png, ./assets/images/snow-6-2x.png 2x"
-                    class="snow__image"
-                    src="./assets/images/snow-6.png"
-                    alt="Snow"
-            />
-        </picture>
-    </div>
-    <div class="chat">
-        <div class="chat__header">
-            <h4 class="chat__title">
-                live chat
-            </h4>
-            <p class="chat__users-count">
-                35 online
-            </p>
-        </div>
-        <div class="chat__body">
-            <div class="chat__message message">
-                <picture class="message__user-avatar user-avatar">
-                    <source srcset="./assets/images/avatar.webp, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
-                    <img
-                            srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
-                            class="user-avatar__image"
-                            src="./assets/images/avatar.png"
-                            alt="User avatar"
-                    />
-                </picture>
-                <div class="message__body">
-                    <div class="message__header">
-                        <picture class="message__status-badge status-badge">
-                            <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+            <div class="main__wrapper wrapper">
+                <div class="wrapper__header-aside header-aside">
+                    <a href="#" class="header-aside__link-logo">
+                        <picture class="header-aside__logo-sm logo-sm">
+                            <source srcset="./assets/images/logotype-small.webp, ./assets/images/logotype-small-2x.webp 2x" type="image/webp" />
                             <img
-                                    srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
-                                    class="status-badge__image"
-                                    src="./assets/images/badge-default.png"
-                                    alt="Status badge"
+                                    srcset="./assets/images/logotype-small.png, ./assets/images/logotype-small-2x.png 2x"
+                                    class="logo-sm__image"
+                                    src="./assets/images/logotype-small.png"
+                                    alt="Logotype"
                             />
                         </picture>
-                        <div class="message__username">janalleman</div>
-                    </div>
-                    <div class="message__text">
-                        wtf
+                    </a>
+                    <nav class="header-aside__aside-navigation aside-navigation">
+                        <ul class="aside-navigation__list">
+                            <li class="aside-navigation__item">
+                                <a href="#" class="aside-navigation__link">
+                                    <svg class="aside-navigation__icon" aria-hidden="true" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2172 1.72046C1.98709 1.72046 1.80054 1.90701 1.80054 2.13713V7.49944C1.80054 7.72956 1.98709 7.91611 2.2172 7.91611H7.57952C7.80964 7.91611 7.99619 7.72956 7.99619 7.49944V2.13713C7.99619 1.90701 7.80964 1.72046 7.57952 1.72046H2.2172ZM0.550537 2.13713C0.550537 1.21665 1.29673 0.470459 2.2172 0.470459H7.57952C8.49999 0.470459 9.24619 1.21665 9.24619 2.13713V7.49944C9.24619 8.41992 8.49999 9.16611 7.57952 9.16611H2.2172C1.29673 9.16611 0.550537 8.41992 0.550537 7.49944V2.13713Z" fill="#3B436B"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2172 13.0248C1.98709 13.0248 1.80054 13.2113 1.80054 13.4414V18.8038C1.80054 19.0339 1.98709 19.2204 2.2172 19.2204H7.57952C7.80964 19.2204 7.99619 19.0339 7.99619 18.8038V13.4414C7.99619 13.2113 7.80964 13.0248 7.57952 13.0248H2.2172ZM0.550537 13.4414C0.550537 12.521 1.29673 11.7748 2.2172 11.7748H7.57952C8.49999 11.7748 9.24619 12.521 9.24619 13.4414V18.8038C9.24619 19.7242 8.49999 20.4704 7.57952 20.4704H2.2172C1.29673 20.4704 0.550537 19.7242 0.550537 18.8038V13.4414Z" fill="#2D3660"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5216 1.72046C13.2915 1.72046 13.105 1.90701 13.105 2.13713V7.49944C13.105 7.72956 13.2915 7.91611 13.5216 7.91611H18.884C19.1141 7.91611 19.3006 7.72956 19.3006 7.49944V2.13713C19.3006 1.90701 19.1141 1.72046 18.884 1.72046H13.5216ZM11.855 2.13713C11.855 1.21665 12.6012 0.470459 13.5216 0.470459H18.884C19.8044 0.470459 20.5506 1.21665 20.5506 2.13713V7.49944C20.5506 8.41992 19.8044 9.16611 18.884 9.16611H13.5216C12.6012 9.16611 11.855 8.41992 11.855 7.49944V2.13713Z" fill="#4D5B97"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5216 13.0248C13.2915 13.0248 13.105 13.2113 13.105 13.4414V18.8038C13.105 19.0339 13.2915 19.2204 13.5216 19.2204H18.884C19.1141 19.2204 19.3006 19.0339 19.3006 18.8038V13.4414C19.3006 13.2113 19.1141 13.0248 18.884 13.0248H13.5216ZM11.855 13.4414C11.855 12.521 12.6012 11.7748 13.5216 11.7748H18.884C19.8044 11.7748 20.5506 12.521 20.5506 13.4414V18.8038C20.5506 19.7242 19.8044 20.4704 18.884 20.4704H13.5216C12.6012 20.4704 11.855 19.7242 11.855 18.8038V13.4414Z" fill="#3B436B"/>
+                                    </svg>
+                                    <span class="aside-navigation__title">
+                                main
+                            </span>
+                                </a>
+                            </li>
+                            <li class="aside-navigation__item">
+                                <a href="#" class="aside-navigation__link">
+                                    <svg class="aside-navigation__icon" aria-hidden="true" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.75C1.41421 12.75 1.75 13.0858 1.75 13.5C1.75 16.4837 2.93522 19.3452 5.045 21.455L4.51467 21.9853L5.045 21.455C7.15478 23.5647 10.0163 24.75 13 24.75L13.0009 24.75C14.6613 24.752 16.3014 24.3851 17.8027 23.6759C19.304 22.9666 20.6291 21.9327 21.6821 20.6489C21.9448 20.3286 22.4174 20.2819 22.7376 20.5446C23.0579 20.8073 23.1046 21.2799 22.8419 21.6001C21.6479 23.0557 20.1456 24.228 18.4435 25.0321L18.4435 25.0321C16.7415 25.8362 14.8823 26.2521 13 26.25M1 12.75C0.585786 12.75 0.25 13.0858 0.25 13.5ZM0.25 13.5C0.25 16.8815 1.59324 20.1246 3.98434 22.5156ZM3.98434 22.5156C6.37532 24.9066 9.61817 26.2499 12.9996 26.25Z" fill="#3B436B"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 2.25C10.0163 2.25 7.15478 3.43529 5.045 5.54508L4.51467 5.01475L5.045 5.54508C2.93522 7.65485 1.75 10.5163 1.75 13.5C1.75 13.9142 1.41421 14.25 1 14.25C0.585786 14.25 0.25 13.9142 0.25 13.5C0.25 10.1185 1.59324 6.87551 3.98434 4.48442M3.98434 4.48442C6.37542 2.09333 9.61846 0.75 13 0.75C13.4142 0.75 13.75 1.08579 13.75 1.5C13.75 1.91421 13.4142 2.25 13 2.25" fill="#4D5B97"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.25 1.5C12.25 1.08579 12.5858 0.75 13 0.75C16.3815 0.75 19.6246 2.09333 22.0156 4.48442C24.4065 6.87528 25.7497 10.1178 25.75 13.4991C25.75 13.4994 25.75 13.4997 25.75 13.5H25L25.75 13.4986C25.75 13.4987 25.75 13.4989 25.75 13.4991C25.7555 16.4571 24.726 19.324 22.8397 21.6026C22.5756 21.9217 22.1028 21.9663 21.7838 21.7021C21.4647 21.438 21.4201 20.9652 21.6843 20.6462C23.3473 18.6371 24.255 16.1094 24.25 13.5014L24.25 13.5C24.25 10.5163 23.0647 7.65486 20.955 5.54508L21.46 5.04L20.955 5.54508C18.8452 3.43529 15.9837 2.25 13 2.25C12.5858 2.25 12.25 1.91421 12.25 1.5Z" fill="#2D3660"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 8.25C10.1005 8.25 7.75 10.6005 7.75 13.5C7.75 16.3995 10.1005 18.75 13 18.75C15.8995 18.75 18.25 16.3995 18.25 13.5C18.25 10.6005 15.8995 8.25 13 8.25ZM6.25 13.5C6.25 9.77208 9.27208 6.75 13 6.75C16.7279 6.75 19.75 9.77208 19.75 13.5C19.75 17.2279 16.7279 20.25 13 20.25C9.27208 20.25 6.25 17.2279 6.25 13.5Z" fill="#3B436B"/>
+                                    </svg>
+                                    <span class="aside-navigation__title">
+                            jackpot
+                        </span>
+                                    <span class="aside-navigation__price">
+                            $ 0
+                        </span>
+                                </a>
+                            </li>
+                            <li class="aside-navigation__item">
+                                <a href="#" class="aside-navigation__link">
+                                    <svg class="aside-navigation__icon" aria-hidden="true" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.31061 2.64861C2.50446 4.03765 3.15233 5.33252 4.16484 6.32435L4.16651 6.32598L15.5099 17.507L17.3916 15.5804L6.03661 4.39731C5.01622 3.41437 3.70409 2.80375 2.31061 2.64861ZM1.48914 1.1102C3.57162 1.08004 5.58155 1.87447 7.08065 3.32028L7.0863 3.32573L7.08627 3.32576L18.9763 15.0357C19.2705 15.3255 19.2751 15.7987 18.9866 16.0941L16.0566 19.0941C15.9172 19.2369 15.7266 19.3182 15.5271 19.3201C15.3276 19.322 15.1356 19.2443 14.9935 19.1042L3.11518 7.3959C3.11489 7.39561 3.11459 7.39532 3.1143 7.39503C1.62733 5.93797 0.777348 3.95166 0.750066 1.86995C0.744643 1.45618 1.07537 1.1162 1.48914 1.1102Z" fill="#4D5B97"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0143 17.6542C20.3045 17.3586 20.7793 17.3544 21.0749 17.6446L24.4279 20.9376C24.6656 21.1737 24.8542 21.4544 24.9829 21.7638C25.1116 22.073 25.1779 22.4048 25.1779 22.7397C25.1779 23.0747 25.1116 23.4063 24.9829 23.7156C24.8542 24.025 24.6656 24.3057 24.4279 24.5418L24.4252 24.5445C23.9502 25.0116 23.3106 25.2734 22.6444 25.2734C21.9788 25.2734 21.3399 25.0121 20.865 24.5459L17.4661 21.2371C17.1693 20.9482 17.1629 20.4733 17.4519 20.1765C17.7408 19.8797 18.2156 19.8733 18.5124 20.1623L21.9125 23.4723L21.9152 23.4749C22.1098 23.6662 22.3716 23.7734 22.6444 23.7734C22.9164 23.7734 23.1777 23.6667 23.3721 23.4763C23.4689 23.3798 23.5456 23.2654 23.598 23.1394C23.6507 23.0126 23.6779 22.8768 23.6779 22.7397C23.6779 22.6025 23.6507 22.4666 23.598 22.3401C23.5456 22.2141 23.4688 22.0995 23.3721 22.0031L20.0238 18.7148C19.7283 18.4246 19.724 17.9497 20.0143 17.6542Z" fill="#4D5B97"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0299 14.3799C24.3228 14.6728 24.3228 15.1477 24.0299 15.4405L15.2999 24.1705C15.007 24.4634 14.5321 24.4634 14.2392 24.1705C13.9463 23.8777 13.9463 23.4028 14.2392 23.1099L22.9692 14.3799C23.2621 14.087 23.737 14.087 24.0299 14.3799Z" fill="#3B436B"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10309 14.9565C7.3925 14.6602 7.86735 14.6546 8.16368 14.944L11.1637 17.874C11.4601 18.1634 11.4657 18.6382 11.1763 18.9346C10.8868 19.2309 10.412 19.2365 10.1157 18.9471L7.11562 16.0171C6.81929 15.7277 6.81368 15.2528 7.10309 14.9565Z" fill="#2D3660"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3011 0.750058C24.7148 0.744974 25.0545 1.07587 25.0602 1.48957C25.0892 3.57105 24.2954 5.5798 22.8515 7.07922C22.8512 7.07959 22.8508 7.07996 22.8504 7.08033L18.7825 11.3381C18.4963 11.6376 18.0216 11.6484 17.7221 11.3623C17.4226 11.0761 17.4118 10.6014 17.6979 10.3019L21.768 6.0419L21.7702 6.03967C22.7542 5.01818 23.3657 3.70476 23.5215 2.30985C22.1334 2.50204 20.8387 3.14689 19.8451 4.15584L15.735 8.33584C15.4446 8.63119 14.9697 8.6352 14.6744 8.34478C14.379 8.05437 14.375 7.57951 14.6654 7.28416L18.7755 3.10416C20.2349 1.62191 22.2211 0.775617 24.3011 0.750058Z" fill="#2D3660"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99251 17.4227C6.28974 17.7112 6.29683 18.186 6.00834 18.4832L2.7012 21.8906C2.51048 22.0818 2.40332 22.3408 2.40332 22.6109C2.40332 22.8809 2.51045 23.14 2.70115 23.3312L2.70617 23.3362C2.8012 23.4333 2.91459 23.5105 3.03983 23.5632C3.16481 23.6158 3.2992 23.6429 3.43512 23.6429C3.57103 23.6429 3.70541 23.6158 3.83039 23.5632C3.95571 23.5105 4.06918 23.4333 4.16413 23.3363L4.16583 23.3346L7.46582 19.9846C7.7565 19.6895 8.23136 19.6859 8.52645 19.9766C8.82154 20.2673 8.82511 20.7421 8.53442 21.0372L5.23613 24.3855C5.23581 24.3858 5.23548 24.3861 5.23516 24.3865C5.00068 24.6258 4.72086 24.8159 4.41215 24.9458M5.99251 17.4227C5.69527 17.1342 5.22045 17.1413 4.93196 17.4385ZM4.93196 17.4385L1.63523 20.8352ZM1.63523 20.8352C1.16648 21.3072 0.90332 21.9455 0.90332 22.6109C0.90332 23.2769 1.167 23.9159 1.63668 24.388C1.87079 24.6265 2.14996 24.8161 2.45808 24.9458M2.45808 24.9458C2.76753 25.076 3.09973 25.1429 3.43512 25.1429ZM3.43512 25.1429C3.7705 25.1429 4.1027 25.076 4.41215 24.9458Z" fill="#3B436B"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00971 14.2002C2.3026 13.9073 2.77748 13.9073 3.07037 14.2002L11.7903 22.9202C12.0832 23.2131 12.0832 23.688 11.7903 23.9809C11.4974 24.2738 11.0226 24.2738 10.7297 23.9809L2.00971 15.2609C1.71682 14.968 1.71682 14.4931 2.00971 14.2002Z" fill="#2D3660"/>
+                                    </svg>
+                                    <span class="aside-navigation__title">
+                            pvp mines
+                        </span>
+                                    <span class="aside-navigation__price">
+                            $ 0
+                        </span>
+                                    <span class="aside-navigation__label">
+                            NEW!
+                        </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="wrapper__content content">
+                    <header class="content__header header">
+                        <a href="#" class="header__link-logo">
+                            <picture class="header__logo-md logo-md">
+                                <source srcset="./assets/images/logotype.webp, ./assets/images/logotype-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/logotype.png, ./assets/images/logotype-2x.png 2x"
+                                        class="logo-md__image"
+                                        src="./assets/images/logotype.png"
+                                        alt="Logotype"
+                                />
+                            </picture>
+                        </a>
+                        <nav class="header__navigation navigation">
+                            <ul class="navigation__list">
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link navigation__link--active">
+                                        <svg class="navigation__icon" aria-hidden="true" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2264 1.12434C10.3962 1.02822 10.6039 1.02822 10.7737 1.12434L19.6583 6.15541C19.9068 6.29612 20.008 6.60236 19.8924 6.86347C18.4449 10.1318 16.9935 13.3626 15.3604 16.6418C14.9859 17.6051 14.3406 18.4342 13.5042 19.0213L13.5041 19.0214C12.66 19.6139 11.6608 19.9321 10.6362 19.9321C9.61161 19.9321 8.61212 19.6139 7.76798 19.0214C6.93102 18.4339 6.28552 17.6042 5.9111 16.6404L1.11706 6.88348C0.987386 6.61956 1.08594 6.3003 1.34182 6.15541L10.2264 1.12434ZM2.34476 6.86375L6.9187 16.1727C6.92613 16.1878 6.93287 16.2033 6.9389 16.219C7.23424 16.9904 7.7464 17.6494 8.40601 18.1124L8.40603 18.1124C9.06531 18.5752 9.84244 18.8215 10.6362 18.8215C11.4299 18.8215 12.2067 18.5752 12.8661 18.1124C13.5257 17.6494 14.0378 16.9904 14.3332 16.2191C14.3396 16.2024 14.3468 16.186 14.3547 16.17C15.9044 13.0597 17.2908 9.9899 18.6731 6.87378L10.5001 2.24567L2.34476 6.86375Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2698 4.23495C10.4583 4.10987 10.7038 4.11162 10.8905 4.23936L15.8353 7.62305C16.0482 7.76877 16.1327 8.04196 16.0393 8.28245C15.2219 10.3858 14.4013 12.4675 13.4778 14.581C13.2568 15.2249 12.8737 15.7908 12.3645 16.1982L12.3644 16.1983C11.8474 16.6118 11.2246 16.8416 10.5769 16.8416C9.92917 16.8416 9.30626 16.6118 8.78917 16.1983L8.78913 16.1982C8.2795 15.7905 7.89624 15.2241 7.67533 14.5797L4.96829 8.30117C4.86195 8.05454 4.94737 7.76716 5.17115 7.61865L10.2698 4.23495ZM6.17179 8.28747L8.70392 14.1603C8.71 14.1744 8.7155 14.1888 8.72039 14.2033C8.87848 14.6739 9.14866 15.0636 9.48288 15.331C9.81559 15.5971 10.1969 15.731 10.5769 15.731C10.9568 15.731 11.338 15.5971 11.6707 15.331C12.0049 15.0636 12.2751 14.6739 12.4332 14.2033C12.4384 14.1879 12.4443 14.1726 12.4508 14.1577C13.3086 12.1958 14.0781 10.2582 14.8444 8.29071L10.5721 5.36722L6.17179 8.28747Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" aria-hidden="true" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4185 16.1641C17.3074 15.1356 17.8187 13.724 17.8187 12.2372H19.0185C19.0185 13.9903 18.4174 15.6862 17.3263 16.9487C16.2328 18.2139 14.7292 18.9453 13.1394 18.9453V17.7455C14.3498 17.7455 15.532 17.1899 16.4185 16.1641Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5034 1.49353C9.53243 1.49266 8.57217 1.66067 7.67809 1.9866L7.47262 1.42297L7.67809 1.9866C6.78404 2.31252 5.97606 2.78908 5.29876 3.38586L5.29875 3.38586C4.62157 3.98252 4.089 4.6869 3.72731 5.45649C3.36577 6.22578 3.18102 7.04715 3.18102 7.87439H1.9812C1.9812 6.86698 2.20647 5.87169 2.64143 4.94616L2.64144 4.94616C3.07627 4.02093 3.71112 3.18561 4.50556 2.48563C5.29986 1.78577 6.23882 1.23422 7.26715 0.859342L7.26716 0.859341C8.29538 0.484508 9.39517 0.292747 10.5042 0.293705C12.7398 0.293767 14.8965 1.07638 16.4974 2.48834L16.4974 2.48834C18.1007 3.90248 19.0187 5.8378 19.0187 7.87439H17.8189C17.8189 6.20814 17.069 4.59233 15.7037 3.38816C14.336 2.18186 12.4666 1.49353 10.5039 1.49353L10.5034 1.49353ZM10.5042 0.293705C10.5042 0.293705 10.5043 0.293705 10.5044 0.293705L10.5039 0.893348V0.293705C10.504 0.293705 10.5041 0.293705 10.5042 0.293705Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.63112 6.72912C4.72467 6.72912 3.86852 7.04616 3.24821 7.59112L2.85227 7.14042L3.24821 7.59112C2.6304 8.13388 2.30114 8.85213 2.30114 9.58172V10.5301C2.30114 10.893 2.38239 11.2548 2.54299 11.5954M2.45632 6.68973C3.31002 5.93974 4.45302 5.5293 5.63112 5.5293C6.12481 5.5293 6.61144 5.70089 6.98118 6.02572C7.35341 6.35273 7.58035 6.8142 7.58035 7.31462V12.7972C7.58035 13.2976 7.3534 13.7591 6.98116 14.0861C6.61138 14.411 6.12474 14.5825 5.63112 14.5825C5.04626 14.5825 4.46573 14.4813 3.92209 14.2835C3.37839 14.0857 2.87977 13.7941 2.45633 13.4221L2.45632 13.4221C2.03274 13.0499 1.69198 12.6039 1.45777 12.1072L1.45775 12.1071C1.22336 11.61 1.10132 11.0738 1.10132 10.5301V9.58172C1.10132 8.48008 1.60014 7.44193 2.45632 6.68974L2.45632 6.68973ZM5.63112 6.72912C5.85315 6.72912 6.05293 6.80731 6.18929 6.9271ZM6.18929 6.9271L6.58295 6.47902ZM6.38053 7.31462C6.38053 7.18626 6.32315 7.0447 6.1893 6.9271L6.58295 6.47902M6.38053 7.31462V12.7972ZM3.2482 12.5207C2.94195 12.2516 2.70377 11.9364 2.543 11.5955ZM3.24821 12.5207C3.55463 12.7899 3.92245 13.0068 4.33235 13.156L4.13408 13.7009L4.33235 13.156C4.7423 13.3052 5.18382 13.3827 5.63112 13.3827C5.85319 13.3827 6.05293 13.3045 6.18924 13.1847L6.18931 13.1847C6.32316 13.0671 6.38053 12.9256 6.38053 12.7972" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8108 6.92718C14.9472 6.8074 15.147 6.72924 15.369 6.72924ZM14.0189 6.02581C14.3887 5.701 14.8753 5.52942 15.369 5.52942C16.547 5.52942 17.6901 5.9399 18.5437 6.68989M15.369 6.72924C16.2754 6.72924 17.1316 7.04631 17.7518 7.59125ZM14.8108 6.92718C14.677 7.04482 14.6195 7.18647 14.6195 7.31477V12.7973C14.6195 12.9256 14.6769 13.0672 14.8107 13.1848M14.0189 6.02581C13.6468 6.35278 13.4197 6.8143 13.4197 7.31477ZM17.7518 7.59125C18.3696 8.134 18.6989 8.85226 18.6989 9.58186ZM18.5437 6.68989C19.3999 7.44207 19.8987 8.48023 19.8987 9.58186V10.5479C19.8934 11.6464 19.3924 12.6799 18.5368 13.4282M13.4197 7.31477V12.7973ZM18.6989 9.58186V10.5434ZM18.6989 10.5434C18.695 11.2706 18.364 11.9854 17.7469 12.5252C17.1269 13.0675 16.2729 13.3828 15.369 13.3828C15.147 13.3828 14.9471 13.3046 14.8107 13.1848M18.5368 13.4282C17.6838 14.1745 16.5438 14.5826 15.369 14.5826C14.8752 14.5826 14.3886 14.411 14.0189 14.0862C13.6468 13.7593 13.4197 13.2977 13.4197 12.7973" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.02026 18.7817C9.02026 17.7188 9.89284 16.8729 10.9494 16.8729H11.8104C12.8671 16.8729 13.7396 17.7188 13.7396 18.7817C13.7396 19.8446 12.8671 20.6905 11.8104 20.6905H10.9494C9.89282 20.6905 9.02026 19.8446 9.02026 18.7817ZM10.9494 18.0727C10.5379 18.0727 10.2201 18.3989 10.2201 18.7817C10.2201 19.1646 10.5379 19.4907 10.9494 19.4907H11.8104C12.222 19.4907 12.5397 19.1646 12.5397 18.7817C12.5397 18.3989 12.222 18.0727 11.8104 18.0727H10.9494Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" aria-hidden="true"  viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0688 11.1194C14.0688 10.8128 14.3174 10.5642 14.624 10.5642H15.4743C17.939 10.5642 19.9379 12.5606 19.9379 15.0244C19.9379 16.7692 18.5223 18.1829 16.7771 18.1829H14.624C14.3174 18.1829 14.0688 17.9343 14.0688 17.6277C14.0688 17.3211 14.3174 17.0725 14.624 17.0725H16.7771C17.91 17.0725 18.8276 16.1551 18.8276 15.0244C18.8276 13.1748 17.3267 11.6746 15.4743 11.6746H14.624C14.3174 11.6746 14.0688 11.426 14.0688 11.1194Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4829 1.35681C12.4829 1.0502 12.7315 0.801636 13.0381 0.801636C15.1101 0.801636 16.7658 2.52052 16.7658 4.61097C16.7658 6.70141 15.1101 8.4203 13.0381 8.4203C12.7315 8.4203 12.4829 8.17174 12.4829 7.86513C12.4829 7.55852 12.7315 7.30995 13.0381 7.30995C14.4704 7.30995 15.6554 6.11496 15.6554 4.61097C15.6554 3.10697 14.4704 1.91199 13.0381 1.91199C12.7315 1.91199 12.4829 1.66343 12.4829 1.35681Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52561 11.6746C3.6732 11.6746 2.17236 13.1748 2.17236 15.0244C2.17236 16.1551 3.08992 17.0725 4.2228 17.0725H10.1152C11.2481 17.0725 12.1657 16.1551 12.1657 15.0244C12.1657 13.1748 10.6648 11.6746 8.81248 11.6746H5.52561ZM1.06201 15.0244C1.06201 12.5606 3.06089 10.5642 5.52561 10.5642H8.81248C11.2772 10.5642 13.276 12.5606 13.276 15.0244C13.276 16.7692 11.8605 18.1829 10.1152 18.1829H4.2228C2.4776 18.1829 1.06201 16.7692 1.06201 15.0244Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.1693 1.91199C5.73703 1.91199 4.552 3.10697 4.552 4.61097C4.552 6.11497 5.73703 7.30995 7.1693 7.30995C8.60158 7.30995 9.7866 6.11497 9.7866 4.61097C9.7866 3.10697 8.60158 1.91199 7.1693 1.91199ZM3.44165 4.61097C3.44165 2.52052 5.09736 0.801636 7.1693 0.801636C9.24125 0.801636 10.897 2.52052 10.897 4.61097C10.897 6.70142 9.24125 8.4203 7.1693 8.4203C5.09736 8.4203 3.44165 6.70142 3.44165 4.61097Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="navigation__item">
+                                    <a href="#" class="navigation__link">
+                                        <svg class="navigation__icon" aria-hidden="true" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0688 11.1194C14.0688 10.8128 14.3174 10.5642 14.624 10.5642H15.4743C17.939 10.5642 19.9379 12.5606 19.9379 15.0244C19.9379 16.7692 18.5223 18.1829 16.7771 18.1829H14.624C14.3174 18.1829 14.0688 17.9343 14.0688 17.6277C14.0688 17.3211 14.3174 17.0725 14.624 17.0725H16.7771C17.91 17.0725 18.8276 16.1551 18.8276 15.0244C18.8276 13.1748 17.3267 11.6746 15.4743 11.6746H14.624C14.3174 11.6746 14.0688 11.426 14.0688 11.1194Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4829 1.35681C12.4829 1.0502 12.7315 0.801636 13.0381 0.801636C15.1101 0.801636 16.7658 2.52052 16.7658 4.61097C16.7658 6.70141 15.1101 8.4203 13.0381 8.4203C12.7315 8.4203 12.4829 8.17174 12.4829 7.86513C12.4829 7.55852 12.7315 7.30995 13.0381 7.30995C14.4704 7.30995 15.6554 6.11496 15.6554 4.61097C15.6554 3.10697 14.4704 1.91199 13.0381 1.91199C12.7315 1.91199 12.4829 1.66343 12.4829 1.35681Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52561 11.6746C3.6732 11.6746 2.17236 13.1748 2.17236 15.0244C2.17236 16.1551 3.08992 17.0725 4.2228 17.0725H10.1152C11.2481 17.0725 12.1657 16.1551 12.1657 15.0244C12.1657 13.1748 10.6648 11.6746 8.81248 11.6746H5.52561ZM1.06201 15.0244C1.06201 12.5606 3.06089 10.5642 5.52561 10.5642H8.81248C11.2772 10.5642 13.276 12.5606 13.276 15.0244C13.276 16.7692 11.8605 18.1829 10.1152 18.1829H4.2228C2.4776 18.1829 1.06201 16.7692 1.06201 15.0244Z" fill="currentColor"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.1693 1.91199C5.73703 1.91199 4.552 3.10697 4.552 4.61097C4.552 6.11497 5.73703 7.30995 7.1693 7.30995C8.60158 7.30995 9.7866 6.11497 9.7866 4.61097C9.7866 3.10697 8.60158 1.91199 7.1693 1.91199ZM3.44165 4.61097C3.44165 2.52052 5.09736 0.801636 7.1693 0.801636C9.24125 0.801636 10.897 2.52052 10.897 4.61097C10.897 6.70142 9.24125 8.4203 7.1693 8.4203C5.09736 8.4203 3.44165 6.70142 3.44165 4.61097Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__actions">
+                            <div class="header__languages-toggle languages-toggle">
+                                <picture class="languages-toggle__flag flag flag--md">
+                                    <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
+                                    <img
+                                            srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
+                                            class="flag__image"
+                                            src="./assets/images/flag-en.png"
+                                            alt="flag en"
+                                    />
+                                </picture>
+                                <span class="languages-toggle__lang">en</span>
+                                <svg class="languages-toggle__icon" aria-hidden="true" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.5 6.87548C0.5 7.09136 0.580339 7.30729 0.740655 7.47194L5.79049 12.6532C6.11172 12.9828 6.63254 12.9828 6.95364 12.6532C7.27473 12.3237 7.27473 11.7895 6.95364 11.4598L2.48533 6.87548L6.95332 2.2909C7.27442 1.9615 7.27442 1.4271 6.95332 1.0977C6.63222 0.767901 6.11157 0.767901 5.79034 1.0977L0.740472 6.27885C0.580183 6.44358 0.5 6.65952 0.5 6.87548Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="header__hamburger hamburger">
+                                <div class="hamburger__line"></div>
+                                <div class="hamburger__line"></div>
+                                <div class="hamburger__line"></div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="content__main-part">
+                        <div class="content__banners-slider banners-slider swiper">
+                            <div class="banners-slider__wrapper swiper-wrapper">
+                                <div class="banners-slider__slide swiper-slide">
+                                    <picture class="banners-slider__promo-banner promo-banner">
+                                        <source srcset="./assets/images/main-banner.webp, ./assets/images/main-banner-2x.webp 2x" type="image/webp" />
+                                        <img
+                                                srcset="./assets/images/main-banner.jpg, ./assets/images/main-banner-2x.jpg 2x"
+                                                class="promo-banner__image"
+                                                src="./assets/images/main-banner.jpg"
+                                                alt="Main banner"
+                                        />
+                                    </picture>
+                                </div>
+                                <div class="banners-slider__slide swiper-slide">
+                                    <picture class="banners-slider__promo-banner promo-banner">
+                                        <source srcset="./assets/images/main-banner.webp, ./assets/images/main-banner-2x.webp 2x" type="image/webp" />
+                                        <img
+                                                srcset="./assets/images/main-banner.jpg, ./assets/images/main-banner-2x.jpg 2x"
+                                                class="promo-banner__image"
+                                                src="./assets/images/main-banner.jpg"
+                                                alt="Main banner"
+                                        />
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="banners-slider__button banners-slider__button--prev">
+                                <svg class="banners-slider__button-icon" aria-hidden="true" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.982 2.15136L10.0178 0.1875L3.01782 7.18764L10.0178 14.1875L11.982 12.2236L6.94597 7.18764L11.982 2.15136Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="banners-slider__button banners-slider__button--next">
+                                <svg class="banners-slider__button-icon" aria-hidden="true" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.01802 12.2236L4.98218 14.1875L11.9822 7.18736L4.98218 0.1875L3.01802 2.15138L8.05403 7.18736L3.01802 12.2236Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <picture class="snow banners-slider__snow banners-slider__snow--top-left">
+                                <source srcset="./assets/images/snow-3.webp, ./assets/images/snow-3-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/snow-3.png, ./assets/images/snow-3-2x.png 2x"
+                                        class="snow__image"
+                                        src="./assets/images/snow-3.png"
+                                        alt="Snow"
+                                />
+                            </picture>
+                            <picture class="snow banners-slider__snow banners-slider__snow--top-right">
+                                <source srcset="./assets/images/snow-4.webp, ./assets/images/snow-4-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/snow-4.png, ./assets/images/snow-4-2x.png 2x"
+                                        class="snow__image"
+                                        src="./assets/images/snow-4.png"
+                                        alt="Snow"
+                                />
+                            </picture>
+                            <picture class="snow banners-slider__snow banners-slider__snow--bottom-left">
+                                <source srcset="./assets/images/snow-5.webp, ./assets/images/snow-5-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/snow-5.png, ./assets/images/snow-5-2x.png 2x"
+                                        class="snow__image"
+                                        src="./assets/images/snow-5.png"
+                                        alt="Snow"
+                                />
+                            </picture>
+                            <picture class="snow banners-slider__snow banners-slider__snow--bottom-right">
+                                <source srcset="./assets/images/snow-6.webp, ./assets/images/snow-6-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/snow-6.png, ./assets/images/snow-6-2x.png 2x"
+                                        class="snow__image"
+                                        src="./assets/images/snow-6.png"
+                                        alt="Snow"
+                                />
+                            </picture>
+                        </div>
+                        <div class="content__banners banners">
+                            <picture class="banners__item banners__item--first">
+                                <source srcset="./assets/images/plinko-banner.webp, ./assets/images/plinko-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/plinko-banner.png, ./assets/images/plinko-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/plinko-banner.png"
+                                        alt="Plinko banner"
+                                />
+                            </picture>
+                            <picture class="banners__item banners__item--second">
+                                <source srcset="./assets/images/wheel-banner.webp, ./assets/images/wheel-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/wheel-banner.png, ./assets/images/wheel-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/wheel-banner.png"
+                                        alt="Wheel banner"
+                                />
+                            </picture>
+                            <picture class="banners__item banners__item--third">
+                                <source srcset="./assets/images/mines-banner.webp, ./assets/images/mines-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/mines-banner.png, ./assets/images/mines-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/mines-banner.png"
+                                        alt="Mines banner"
+                                />
+                            </picture>
+                            <picture class="banners__item banners__item--fourth">
+                                <source srcset="./assets/images/jackpot-banner.webp, ./assets/images/jackpot-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/jackpot-banner.png, ./assets/images/jackpot-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/jackpot-banner.png"
+                                        alt="Jackpot banner"
+                                />
+                            </picture>
+                            <picture class="banners__item banners__item--fifth">
+                                <source srcset="./assets/images/pvpmines-banner.webp, ./assets/images/pvpmines-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/pvpmines-banner.png, ./assets/images/pvpmines-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/pvpmines-banner.png"
+                                        alt="PVP Mines banner"
+                                />
+                            </picture>
+                            <picture class="banners__item banners__item--sixth">
+                                <source srcset="./assets/images/coinflip-banner.webp, ./assets/images/coinflip-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/coinflip-banner.png, ./assets/images/coinflip-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/coinflip-banner.png"
+                                        alt="Coinflip banner"
+                                />
+                            </picture>
+                            <picture class="banners__item banners__item--seventh">
+                                <source srcset="./assets/images/upgrader-banner.webp, ./assets/images/upgrader-banner-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/upgrader-banner.png, ./assets/images/upgrader-banner-2x.png 2x"
+                                        class="banners__image"
+                                        src="./assets/images/upgrader-banner.png"
+                                        alt="Upgrader banner"
+                                />
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="chat__message message">
-                <div class="message__user-avatar user-avatar">
-                    <picture class="user-avatar__wrapper">
-                        <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+        </div>
+        <div class="layout__chat chat">
+            <div class="chat__header">
+                <h4 class="chat__title">
+                    live chat
+                </h4>
+                <p class="chat__users-count">
+                    35 online
+                </p>
+            </div>
+            <div class="chat__body">
+                <div class="chat__message message">
+                    <picture class="message__user-avatar user-avatar">
+                        <source srcset="./assets/images/avatar.webp, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
                         <img
                                 srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
                                 class="user-avatar__image"
@@ -199,310 +358,341 @@
                                 alt="User avatar"
                         />
                     </picture>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-default.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">janalleman</div>
+                        </div>
+                        <div class="message__text">
+                            wtf
+                        </div>
+                    </div>
                 </div>
-                <div class="message__body">
-                    <div class="message__header">
-                        <picture class="message__status-badge status-badge">
-                            <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
                             <img
-                                    srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
-                                    class="status-badge__image"
-                                    src="./assets/images/badge-active.png"
-                                    alt="Status badge"
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="User avatar"
                             />
                         </picture>
-                        <div class="message__username">NotTerry</div>
                     </div>
-                    <div class="message__text">
-                        i just won upgrader and its not giving me my item
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-active.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">NotTerry</div>
+                        </div>
+                        <div class="message__text">
+                            i just won upgrader and its not giving me my item
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="chat__message message">
-                <div class="message__user-avatar user-avatar">
-                    <picture class="user-avatar__wrapper">
-                        <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
-                        <img
-                                srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
-                                class="user-avatar__image"
-                                src="./assets/images/avatar.png"
-                                alt="Logotype"
-                        />
-                    </picture>
-                </div>
-                <div class="message__body">
-                    <div class="message__header">
-                        <picture class="message__status-badge status-badge">
-                            <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
                             <img
-                                    srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
-                                    class="status-badge__image"
-                                    src="./assets/images/badge-default.png"
-                                    alt="Status badge"
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="Logotype"
                             />
                         </picture>
-                        <div class="message__username">janalleman</div>
                     </div>
-                    <div class="message__text">
-                        no i think its lag or soomething bc when i try to upgrade again ita says game active
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-default.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">janalleman</div>
+                        </div>
+                        <div class="message__text">
+                            no i think its lag or soomething bc when i try to upgrade again ita says game active
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="User avatar"
+                            />
+                        </picture>
+                    </div>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-active.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">NotTerry</div>
+                        </div>
+                        <div class="message__text">
+                            i just won upgrader and its not giving me my item
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="Logotype"
+                            />
+                        </picture>
+                    </div>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-default.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">janalleman</div>
+                        </div>
+                        <div class="message__text">
+                            no i think its lag or soomething bc when i try to upgrade again ita says game active
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="User avatar"
+                            />
+                        </picture>
+                    </div>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-active.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">NotTerry</div>
+                        </div>
+                        <div class="message__text">
+                            i just won upgrader and its not giving me my item
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="Logotype"
+                            />
+                        </picture>
+                    </div>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-default.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">janalleman</div>
+                        </div>
+                        <div class="message__text">
+                            no i think its lag or soomething bc when i try to upgrade again ita says game active
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="User avatar"
+                            />
+                        </picture>
+                    </div>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-active.webp, ./assets/images/badge-active-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-active.png, ./assets/images/badge-active-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-active.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">NotTerry</div>
+                        </div>
+                        <div class="message__text">
+                            i just won upgrader and its not giving me my item
+                        </div>
+                    </div>
+                </div>
+                <div class="chat__message message">
+                    <div class="message__user-avatar user-avatar">
+                        <picture class="user-avatar__wrapper">
+                            <source srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/avatar.png, ./assets/images/avatar-2x.png 2x"
+                                    class="user-avatar__image"
+                                    src="./assets/images/avatar.png"
+                                    alt="Logotype"
+                            />
+                        </picture>
+                    </div>
+                    <div class="message__body">
+                        <div class="message__header">
+                            <picture class="message__status-badge status-badge">
+                                <source srcset="./assets/images/badge-default.webp, ./assets/images/badge-default-2x.webp 2x" type="image/webp" />
+                                <img
+                                        srcset="./assets/images/badge-default.png, ./assets/images/badge-default-2x.png 2x"
+                                        class="status-badge__image"
+                                        src="./assets/images/badge-default.png"
+                                        alt="Status badge"
+                                />
+                            </picture>
+                            <div class="message__username">janalleman</div>
+                        </div>
+                        <div class="message__text">
+                            no i think its lag or soomething bc when i try to upgrade again ita says game active
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="chat__chat-form chat-form">
-            <div class="chat-form__togglers togglers">
-                <div class="togglers__item togglers__item--active">
-                    <picture class="togglers__flag flag flag--sm">
-                        <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
-                        <img
-                                srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
-                                class="flag__image"
-                                src="./assets/images/flag-en.png"
-                                alt="flag en"
-                        />
-                    </picture>
-                    EN room
+            <div class="chat__chat-form chat-form">
+                <div class="chat-form__togglers togglers">
+                    <div class="togglers__item togglers__item--active">
+                        <picture class="togglers__flag flag flag--sm">
+                            <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
+                                    class="flag__image"
+                                    src="./assets/images/flag-en.png"
+                                    alt="flag en"
+                            />
+                        </picture>
+                        EN
+                    </div>
+                    <div class="togglers__item">
+                        <picture class="togglers__flag flag flag--sm">
+                            <source srcset="./assets/images/flag-ru.webp, ./assets/images/flag-ru-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/flag-ru.png, ./assets/images/flag-ru-2x.png 2x"
+                                    class="flag__image"
+                                    src="./assets/images/flag-ru.png"
+                                    alt="flag ru"
+                            />
+                        </picture>
+                        RU
+                    </div>
+                    <div class="togglers__item">
+                        <picture class="togglers__flag flag flag--sm">
+                            <source srcset="./assets/images/flag-es.webp, ./assets/images/flag-es-2x.webp 2x" type="image/webp" />
+                            <img
+                                    srcset="./assets/images/flag-es.png, ./assets/images/flag-es-2x.png 2x"
+                                    class="flag__image"
+                                    src="./assets/images/flag-es.png"
+                                    alt="flag es"
+                            />
+                        </picture>
+                        ES
+                    </div>
                 </div>
-                <div class="togglers__item">
-                    <picture class="togglers__flag flag flag--sm">
-                        <source srcset="./assets/images/flag-ru.webp, ./assets/images/flag-ru-2x.webp 2x" type="image/webp" />
-                        <img
-                                srcset="./assets/images/flag-ru.png, ./assets/images/flag-ru-2x.png 2x"
-                                class="flag__image"
-                                src="./assets/images/flag-ru.png"
-                                alt="flag ru"
-                        />
-                    </picture>
-                    RU room
-                </div>
-                <div class="togglers__item">
-                    <picture class="togglers__flag flag flag--sm">
-                        <source srcset="./assets/images/flag-es.webp, ./assets/images/flag-es-2x.webp 2x" type="image/webp" />
-                        <img
-                                srcset="./assets/images/flag-es.png, ./assets/images/flag-es-2x.png 2x"
-                                class="flag__image"
-                                src="./assets/images/flag-es.png"
-                                alt="flag es"
-                        />
-                    </picture>
-                    ES room
-                </div>
-            </div>
-            <div class="chat-form__field">
-                <textarea class="chat-form__textarea"></textarea>
-                <svg class="chat-form__smiles-trigger smiles-trigger" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.5001 22.5C14.4175 22.5 17.2154 21.3411 19.2783 19.2782C21.3412 17.2153 22.5002 14.4174 22.5002 11.5C22.5002 8.58262 21.3412 5.78473 19.2783 3.72183C17.2154 1.65893 14.4175 0.5 11.5001 0.5C8.58268 0.5 5.78477 1.65893 3.72185 3.72183C1.65893 5.78473 0.5 8.58262 0.5 11.5C0.5 14.4174 1.65893 17.2153 3.72185 19.2782C5.78477 21.3411 8.58268 22.5 11.5001 22.5Z" fill="#FFC701"/>
-                    <path d="M10.1121 9.0801C10.1121 10.1731 9.49079 11.0601 8.72524 11.0601C7.95969 11.0601 7.33838 10.1731 7.33838 9.0801C7.33838 7.98714 7.95969 7.1001 8.72524 7.1001C9.49079 7.1001 10.1121 7.98714 10.1121 9.0801ZM15.6595 9.0801C15.6595 10.1731 15.0382 11.0601 14.2727 11.0601C13.5071 11.0601 12.8858 10.1731 12.8858 9.0801C12.8858 7.98714 13.5071 7.1001 14.2727 7.1001C15.0382 7.1001 15.6595 7.98714 15.6595 9.0801Z" fill="#161B2A"/>
-                    <path d="M6.3467 13.8049C6.50596 13.7264 6.69523 13.7051 6.87287 13.7458C7.05051 13.7864 7.20196 13.8856 7.29392 14.0216C7.71984 14.6519 8.33275 15.1753 9.07095 15.539C9.80914 15.9028 10.6466 16.0941 11.4989 16.0937C12.3512 16.0941 13.1886 15.9028 13.9268 15.539C14.665 15.1753 15.2779 14.6519 15.7038 14.0216C15.749 13.9537 15.8095 13.8941 15.8818 13.8463C15.9541 13.7985 16.0367 13.7633 16.125 13.7428C16.2132 13.7224 16.3054 13.717 16.396 13.7271C16.4867 13.7372 16.5742 13.7624 16.6534 13.8015C16.7326 13.8405 16.8019 13.8926 16.8575 13.9546C16.913 14.0166 16.9537 14.0874 16.9771 14.1629C17.0004 14.2384 17.0061 14.317 16.9937 14.3944C16.9813 14.4718 16.9511 14.5463 16.9049 14.6136C16.3572 15.4239 15.5692 16.0968 14.6202 16.5645C13.6712 17.0321 12.5947 17.2781 11.4989 17.2777C10.4031 17.2781 9.32655 17.0321 8.37754 16.5645C7.42852 16.0968 6.64054 15.4239 6.0929 14.6136C6.00095 14.4776 5.97603 14.316 6.02363 14.1644C6.07122 14.0127 6.18743 13.8834 6.3467 13.8049Z" fill="#161B2A"/>
-                </svg>
+                <div class="chat-form__field">
+                    <textarea class="chat-form__textarea"></textarea>
+                    <svg class="chat-form__smiles-trigger smiles-trigger" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5001 22.5C14.4175 22.5 17.2154 21.3411 19.2783 19.2782C21.3412 17.2153 22.5002 14.4174 22.5002 11.5C22.5002 8.58262 21.3412 5.78473 19.2783 3.72183C17.2154 1.65893 14.4175 0.5 11.5001 0.5C8.58268 0.5 5.78477 1.65893 3.72185 3.72183C1.65893 5.78473 0.5 8.58262 0.5 11.5C0.5 14.4174 1.65893 17.2153 3.72185 19.2782C5.78477 21.3411 8.58268 22.5 11.5001 22.5Z" fill="#FFC701"/>
+                        <path d="M10.1121 9.0801C10.1121 10.1731 9.49079 11.0601 8.72524 11.0601C7.95969 11.0601 7.33838 10.1731 7.33838 9.0801C7.33838 7.98714 7.95969 7.1001 8.72524 7.1001C9.49079 7.1001 10.1121 7.98714 10.1121 9.0801ZM15.6595 9.0801C15.6595 10.1731 15.0382 11.0601 14.2727 11.0601C13.5071 11.0601 12.8858 10.1731 12.8858 9.0801C12.8858 7.98714 13.5071 7.1001 14.2727 7.1001C15.0382 7.1001 15.6595 7.98714 15.6595 9.0801Z" fill="#161B2A"/>
+                        <path d="M6.3467 13.8049C6.50596 13.7264 6.69523 13.7051 6.87287 13.7458C7.05051 13.7864 7.20196 13.8856 7.29392 14.0216C7.71984 14.6519 8.33275 15.1753 9.07095 15.539C9.80914 15.9028 10.6466 16.0941 11.4989 16.0937C12.3512 16.0941 13.1886 15.9028 13.9268 15.539C14.665 15.1753 15.2779 14.6519 15.7038 14.0216C15.749 13.9537 15.8095 13.8941 15.8818 13.8463C15.9541 13.7985 16.0367 13.7633 16.125 13.7428C16.2132 13.7224 16.3054 13.717 16.396 13.7271C16.4867 13.7372 16.5742 13.7624 16.6534 13.8015C16.7326 13.8405 16.8019 13.8926 16.8575 13.9546C16.913 14.0166 16.9537 14.0874 16.9771 14.1629C17.0004 14.2384 17.0061 14.317 16.9937 14.3944C16.9813 14.4718 16.9511 14.5463 16.9049 14.6136C16.3572 15.4239 15.5692 16.0968 14.6202 16.5645C13.6712 17.0321 12.5947 17.2781 11.4989 17.2777C10.4031 17.2781 9.32655 17.0321 8.37754 16.5645C7.42852 16.0968 6.64054 15.4239 6.0929 14.6136C6.00095 14.4776 5.97603 14.316 6.02363 14.1644C6.07122 14.0127 6.18743 13.8834 6.3467 13.8049Z" fill="#161B2A"/>
+                    </svg>
 
-            </div>
-            <div class="chat-form__rules rules">
-                Chat rules
-                <svg class="rules__icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.90625 0.5C6.52178 0.5 5.1684 0.910543 4.01726 1.67971C2.86612 2.44888 1.96891 3.54213 1.4391 4.82122C0.909283 6.1003 0.77066 7.50776 1.04076 8.86563C1.31085 10.2235 1.97754 11.4708 2.95651 12.4497C3.93547 13.4287 5.18275 14.0954 6.54062 14.3655C7.89849 14.6356 9.30595 14.497 10.585 13.9672C11.8641 13.4373 12.9573 12.5401 13.7266 11.389C14.4958 10.2379 14.9062 8.88447 14.9062 7.5C14.904 5.64416 14.1658 3.86495 12.8535 2.55267C11.5413 1.24039 9.76209 0.502189 7.90625 0.5Z" fill="white"/>
-                    <path d="M10.5975 6.04552C10.5982 6.44222 10.5094 6.83397 10.3376 7.19154C10.1658 7.54911 9.91548 7.86327 9.60533 8.11061L9.60424 8.11148C9.14186 8.46979 8.82918 8.9872 8.72699 9.56317L8.71234 9.6457H8.62852H7.33543H7.22331L7.23609 9.53431C7.29387 9.03043 7.45197 8.54322 7.70105 8.10142C7.94999 7.65985 8.28477 7.27258 8.68568 6.96239C8.82983 6.84686 8.94465 6.6989 9.02078 6.53057C9.09702 6.36199 9.1323 6.17776 9.12372 5.99294C9.11514 5.80812 9.06296 5.62795 8.97143 5.46716C8.87993 5.30641 8.7517 5.16959 8.59723 5.06787C8.42461 4.95508 8.22601 4.8883 8.02031 4.8739C7.81469 4.85951 7.6088 4.89793 7.4222 4.98551C7.22423 5.08048 7.05809 5.2309 6.94396 5.41849C6.82976 5.60619 6.77256 5.82303 6.7793 6.04264L6.77939 6.0457C6.77939 6.241 6.70176 6.4283 6.56367 6.56639C6.42557 6.70449 6.23828 6.78207 6.04298 6.78207C5.84768 6.78207 5.66039 6.70449 5.52229 6.56639C5.38443 6.42853 5.30687 6.24162 5.30662 6.04667C5.29697 5.53826 5.43733 5.03826 5.71019 4.60915C5.98321 4.17978 6.37677 3.84043 6.84163 3.63355C7.25311 3.44968 7.70426 3.37237 8.15348 3.40875C8.60273 3.44514 9.03559 3.59407 9.41212 3.8418C9.77617 4.08279 10.0751 4.4103 10.2819 4.79481C10.4887 5.17929 10.5971 5.60897 10.5975 6.04552ZM10.5975 6.04552C10.5975 6.04549 10.5975 6.04556 10.5975 6.04552V6.04552ZM8.68843 10.5003V10.4003H8.58843H7.31571H7.21571V10.5003V11.773V11.873H7.31571H8.58843H8.68843V11.773V10.5003ZM9.54298 8.03243C9.06098 8.40594 8.73505 8.9453 8.62852 9.5457L9.54298 8.03243Z" fill="#161B2A"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.14555 3.50842C7.71307 3.4734 7.27872 3.54783 6.88257 3.72485C6.43568 3.92373 6.05719 4.25003 5.79472 4.66281C5.53241 5.07533 5.39747 5.55601 5.40675 6.04477L5.40678 6.04654C5.40698 6.21501 5.47401 6.37654 5.59315 6.49568C5.71249 6.61502 5.87435 6.68207 6.04313 6.68207C6.2119 6.68207 6.37376 6.61502 6.4931 6.49568C6.61212 6.37666 6.67916 6.21537 6.67953 6.04712L6.67949 6.04571M6.85867 5.36651C6.98287 5.16238 7.16366 4.99869 7.37909 4.89535C7.58113 4.80052 7.80481 4.75856 8.02744 4.77414C8.25015 4.78973 8.46518 4.86204 8.65207 4.98415M8.1617 3.30907C8.62768 3.34682 9.07667 3.5013 9.46723 3.75826C9.84503 4.00835 10.1555 4.34839 10.3702 4.74744C10.5847 5.14643 10.6973 5.59232 10.6977 6.04534C10.6977 6.04537 10.6977 6.04531 10.6977 6.04534L10.5977 6.04553L10.5978 6.14552L10.4978 6.1457L10.4977 6.04728C10.4981 6.42839 10.4126 6.80471 10.2476 7.14823C10.085 7.48666 9.84929 7.78466 9.55759 8.02081L9.48187 7.95338C8.98026 8.34209 8.64107 8.9034 8.5302 9.52823L8.57668 9.5457L7.33558 9.5457C7.39184 9.05509 7.54578 8.5807 7.7883 8.15053C8.03069 7.72058 8.35666 7.3435 8.74702 7.04148L8.74836 7.04042C8.90481 6.91504 9.02942 6.75446 9.11204 6.57178C9.19478 6.38882 9.23307 6.18888 9.22376 5.9883C9.21445 5.78773 9.15782 5.59219 9.05848 5.41769M7.33558 9.5457L7.22346 9.5457V9.6457L7.3228 9.6571L7.33558 9.5457ZM8.62542 9.56402L8.57668 9.5457H8.62867L8.54308 9.49398L8.71099 9.21612C8.82767 8.85675 9.02573 8.52899 9.28963 8.25858L9.45754 7.98071L9.54313 8.03243C9.54796 8.02857 9.55278 8.0247 9.55759 8.02081L9.62871 8.08415L9.6096 8.11578L9.60883 8.11705L9.44861 8.38218C9.19295 8.63896 9.00279 8.95365 8.89435 9.29939L8.71425 9.59742L8.71249 9.59675V9.6457L8.61402 9.62822L8.62542 9.56402ZM7.13689 9.52292C7.19619 9.00577 7.35845 8.50573 7.61408 8.05231C7.86943 7.59937 8.21278 7.2021 8.62393 6.88384C8.75549 6.77824 8.86029 6.64308 8.92981 6.48936C8.99955 6.33515 9.03182 6.16663 9.02397 5.99758C9.01612 5.82851 8.96839 5.66371 8.88467 5.51663C8.801 5.36963 8.68375 5.24451 8.54251 5.15147C8.3842 5.04808 8.20209 4.98686 8.01347 4.97365C7.825 4.96046 7.63628 4.99564 7.46521 5.07586C7.28487 5.16246 7.13353 5.29954 7.02954 5.47046C6.92541 5.64161 6.87325 5.83933 6.8794 6.03957L6.87958 6.0457C6.87958 6.26754 6.79136 6.48027 6.63453 6.6371C6.47767 6.79395 6.26495 6.88207 6.04313 6.88207C5.8213 6.88207 5.60858 6.79395 5.45172 6.6371C5.29535 6.48073 5.20728 6.26879 5.20677 6.04768C5.19692 5.51993 5.3427 5.00094 5.62595 4.55549C5.90951 4.10955 6.31825 3.7571 6.80104 3.54222C7.22783 3.35152 7.69577 3.27134 8.1617 3.30907M9.66782 8.18879L9.66564 8.19053C9.58889 8.25001 9.51644 8.31405 9.44861 8.38218L8.89435 9.29939C8.86558 9.39112 8.84256 9.48504 8.8256 9.58064L8.7963 9.7457H7.11133L7.13689 9.52292M10.5977 6.04553L10.5975 5.94552L10.4975 5.9457L10.4977 6.04025C10.4964 5.62204 10.3921 5.21055 10.194 4.84217C9.99506 4.47224 9.70741 4.15712 9.35716 3.92524C8.99469 3.6868 8.57801 3.54345 8.14555 3.50842M10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM7.11585 10.3002H8.78857V11.973H7.11585V10.3002ZM7.31586 10.5002H8.58858V11.773H7.31585L7.31586 10.5002Z" fill="#161B2A"/>
-                </svg>
-            </div>
-            <picture class="chat-form__snow chat-form__snow--left snow">
-                <source srcset="./assets/images/snow-1.webp, ./assets/images/snow-1-2x.webp 2x" type="image/webp" />
-                <img
-                        srcset="./assets/images/snow-1.png, ./assets/images/snow-1-2x.png 2x"
-                        class="snow__image"
-                        src="./assets/images/snow-1.png"
-                        alt="Snow"
-                />
-            </picture>
-            <picture class="chat-form__snow chat-form__snow--right snow">
-                <source srcset="./assets/images/snow-2.webp, ./assets/images/snow-2-2x.webp 2x" type="image/webp" />
-                <img
-                        srcset="./assets/images/snow-2.png, ./assets/images/snow-2-2x.png 2x"
-                        class="snow__image"
-                        src="./assets/images/snow-2.png"
-                        alt="Snow"
-                />
-            </picture>
-        </div>
-    </div>
-    <div class="header-upper">
-        <div class="header-upper__social-links social-links">
-            <a href="#" class="social-links__link">
-                <svg class="social-links__icon" aria-hidden="true" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.48286 1.91894C6.35829 1.56759 6.23257 1.21334 6.23029 1.2087C6.17029 1.07245 6.03143 0.986636 5.88514 1.00171C5.79257 1.00925 3.60229 1.20058 2.19886 2.34568C1.46514 3.03331 0 7.05362 0 10.5295C0 10.591 0.0154286 10.6506 0.0457143 10.704C1.05771 12.5072 3.81657 12.9791 4.44514 12.9994C4.44914 13 4.45257 13 4.456 13C4.56686 13 4.67086 12.9461 4.73714 12.855L5.41714 11.9204C4.29371 11.747 4.09086 11.521 4.04343 11.4856C3.78971 11.296 3.60229 11.0304 3.82971 10.6953C4.00457 10.435 4.37143 10.3492 4.65257 10.4958C4.94057 10.6321 5.71143 11.0705 8 11.0589C10.2726 11.0519 11.2703 10.5689 11.2846 10.5585C11.6663 10.384 11.964 10.4558 12.1497 10.7145C12.3709 11.0664 12.2131 11.3046 11.9606 11.4937C11.9131 11.529 11.7983 11.6282 10.5914 11.9181L11.2629 12.8545C11.3286 12.9461 11.4331 12.9994 11.544 12.9994C11.548 12.9994 11.5514 12.9994 11.5549 12.9989C12.184 12.9786 14.9429 12.5066 15.9543 10.7034C15.9846 10.6501 16 10.5904 16 10.5289C16 7.05362 14.5349 3.03331 13.7829 2.3306C12.3977 1.20116 10.2074 1.00983 10.1149 1.00171C9.96856 0.988956 9.82968 1.07303 9.76968 1.2087C9.76744 1.21334 9.64512 1.57339 9.52688 1.92069C9.52688 1.92069 8.59488 1.78212 8 1.78212C7.40514 1.78212 6.48286 1.91894 6.48286 1.91894ZM5.71429 9.31944C5.08286 9.31944 4.57143 8.54659 4.57143 7.59225C4.57143 6.6379 5.08286 5.86504 5.71429 5.86504C6.348 5.76937 6.84343 6.6379 6.85714 7.59225C6.85714 8.54659 6.34571 9.31944 5.71429 9.31944ZM10.2857 9.31944C9.65432 9.31944 9.14288 8.54138 9.14288 7.58181C9.14288 6.62225 9.65432 5.84416 10.2857 5.84416C10.9171 5.84416 11.4286 6.62225 11.4286 7.58181C11.4286 8.54138 10.9171 9.31944 10.2857 9.31944Z" fill="currentColor"/>
-                </svg>
-            </a>
-            <a href="#" class="social-links__link">
-                <svg class="social-links__icon" aria-hidden="true" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8001 2.03891C15.227 2.29997 14.6098 2.47644 13.9624 2.55529C14.6235 2.14969 15.1308 1.50644 15.3698 0.740337C14.7508 1.11595 14.0669 1.38919 13.3361 1.53569C12.7537 0.898164 11.9213 0.5 11.0002 0.5C9.23391 0.5 7.80092 1.96944 7.80092 3.78171C7.80092 4.03899 7.82835 4.28871 7.88328 4.52917C5.2235 4.39194 2.86571 3.08679 1.28609 1.09901C1.01054 1.58542 0.852954 2.14969 0.852954 2.75066C0.852954 3.88872 1.41797 4.89333 2.27682 5.48211C1.75312 5.46614 1.25855 5.31684 0.826386 5.07273V5.11307C0.826386 6.70366 1.92972 8.03038 3.39477 8.33094C3.12652 8.40796 2.84353 8.44644 2.5514 8.44644C2.34543 8.44644 2.14397 8.42675 1.94885 8.38821C2.35627 9.69152 3.53749 10.6408 4.93843 10.6662C3.84327 11.5469 2.46255 12.0718 0.963617 12.0718C0.705365 12.0718 0.449916 12.0567 0.199951 12.0266C1.6165 12.9562 3.29946 13.4999 5.10601 13.4999C10.9937 13.4999 14.2121 8.49987 14.2121 4.16281C14.2121 4.0201 14.2093 3.87739 14.2038 3.73747C14.8295 3.2746 15.3724 2.69716 15.8001 2.03891Z" fill="currentColor"/>
-                </svg>
-            </a>
-        </div>
-        <nav class="header-upper__extra-navigation extra-navigation">
-            <ul class="extra-navigation__list">
-                <li class="extra-navigation__item">
-                    <a href="#" class="extra-navigation__link">
-                        LEADERBOARD
-                    </a>
-                </li>
-                <li class="extra-navigation__item extra-navigation__item--active">
-                    <a href="#" class="extra-navigation__link">
-                        FREE CASE
-                    </a>
-                </li>
-                <li class="extra-navigation__item">
-                    <a href="#" class="extra-navigation__link">
-                        RAKEBACK
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <header class="header">
-        <a href="#" class="header__link-logo">
-            <picture class="header__logo-md logo-md">
-                <source srcset="./assets/images/logotype.webp, ./assets/images/logotype-2x.webp 2x" type="image/webp" />
-                <img
-                        srcset="./assets/images/logotype.png, ./assets/images/logotype-2x.png 2x"
-                        class="logo-md__image"
-                        src="./assets/images/logotype.png"
-                        alt="Logotype"
-                />
-            </picture>
-        </a>
-        <nav class="header__navigation navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link navigation__link--active">
-                        <svg class="navigation__icon" aria-hidden="true" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2264 1.12434C10.3962 1.02822 10.6039 1.02822 10.7737 1.12434L19.6583 6.15541C19.9068 6.29612 20.008 6.60236 19.8924 6.86347C18.4449 10.1318 16.9935 13.3626 15.3604 16.6418C14.9859 17.6051 14.3406 18.4342 13.5042 19.0213L13.5041 19.0214C12.66 19.6139 11.6608 19.9321 10.6362 19.9321C9.61161 19.9321 8.61212 19.6139 7.76798 19.0214C6.93102 18.4339 6.28552 17.6042 5.9111 16.6404L1.11706 6.88348C0.987386 6.61956 1.08594 6.3003 1.34182 6.15541L10.2264 1.12434ZM2.34476 6.86375L6.9187 16.1727C6.92613 16.1878 6.93287 16.2033 6.9389 16.219C7.23424 16.9904 7.7464 17.6494 8.40601 18.1124L8.40603 18.1124C9.06531 18.5752 9.84244 18.8215 10.6362 18.8215C11.4299 18.8215 12.2067 18.5752 12.8661 18.1124C13.5257 17.6494 14.0378 16.9904 14.3332 16.2191C14.3396 16.2024 14.3468 16.186 14.3547 16.17C15.9044 13.0597 17.2908 9.9899 18.6731 6.87378L10.5001 2.24567L2.34476 6.86375Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.2698 4.23495C10.4583 4.10987 10.7038 4.11162 10.8905 4.23936L15.8353 7.62305C16.0482 7.76877 16.1327 8.04196 16.0393 8.28245C15.2219 10.3858 14.4013 12.4675 13.4778 14.581C13.2568 15.2249 12.8737 15.7908 12.3645 16.1982L12.3644 16.1983C11.8474 16.6118 11.2246 16.8416 10.5769 16.8416C9.92917 16.8416 9.30626 16.6118 8.78917 16.1983L8.78913 16.1982C8.2795 15.7905 7.89624 15.2241 7.67533 14.5797L4.96829 8.30117C4.86195 8.05454 4.94737 7.76716 5.17115 7.61865L10.2698 4.23495ZM6.17179 8.28747L8.70392 14.1603C8.71 14.1744 8.7155 14.1888 8.72039 14.2033C8.87848 14.6739 9.14866 15.0636 9.48288 15.331C9.81559 15.5971 10.1969 15.731 10.5769 15.731C10.9568 15.731 11.338 15.5971 11.6707 15.331C12.0049 15.0636 12.2751 14.6739 12.4332 14.2033C12.4384 14.1879 12.4443 14.1726 12.4508 14.1577C13.3086 12.1958 14.0781 10.2582 14.8444 8.29071L10.5721 5.36722L6.17179 8.28747Z" fill="currentColor"/>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <svg class="navigation__icon" aria-hidden="true" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4185 16.1641C17.3074 15.1356 17.8187 13.724 17.8187 12.2372H19.0185C19.0185 13.9903 18.4174 15.6862 17.3263 16.9487C16.2328 18.2139 14.7292 18.9453 13.1394 18.9453V17.7455C14.3498 17.7455 15.532 17.1899 16.4185 16.1641Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5034 1.49353C9.53243 1.49266 8.57217 1.66067 7.67809 1.9866L7.47262 1.42297L7.67809 1.9866C6.78404 2.31252 5.97606 2.78908 5.29876 3.38586L5.29875 3.38586C4.62157 3.98252 4.089 4.6869 3.72731 5.45649C3.36577 6.22578 3.18102 7.04715 3.18102 7.87439H1.9812C1.9812 6.86698 2.20647 5.87169 2.64143 4.94616L2.64144 4.94616C3.07627 4.02093 3.71112 3.18561 4.50556 2.48563C5.29986 1.78577 6.23882 1.23422 7.26715 0.859342L7.26716 0.859341C8.29538 0.484508 9.39517 0.292747 10.5042 0.293705C12.7398 0.293767 14.8965 1.07638 16.4974 2.48834L16.4974 2.48834C18.1007 3.90248 19.0187 5.8378 19.0187 7.87439H17.8189C17.8189 6.20814 17.069 4.59233 15.7037 3.38816C14.336 2.18186 12.4666 1.49353 10.5039 1.49353L10.5034 1.49353ZM10.5042 0.293705C10.5042 0.293705 10.5043 0.293705 10.5044 0.293705L10.5039 0.893348V0.293705C10.504 0.293705 10.5041 0.293705 10.5042 0.293705Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.63112 6.72912C4.72467 6.72912 3.86852 7.04616 3.24821 7.59112L2.85227 7.14042L3.24821 7.59112C2.6304 8.13388 2.30114 8.85213 2.30114 9.58172V10.5301C2.30114 10.893 2.38239 11.2548 2.54299 11.5954M2.45632 6.68973C3.31002 5.93974 4.45302 5.5293 5.63112 5.5293C6.12481 5.5293 6.61144 5.70089 6.98118 6.02572C7.35341 6.35273 7.58035 6.8142 7.58035 7.31462V12.7972C7.58035 13.2976 7.3534 13.7591 6.98116 14.0861C6.61138 14.411 6.12474 14.5825 5.63112 14.5825C5.04626 14.5825 4.46573 14.4813 3.92209 14.2835C3.37839 14.0857 2.87977 13.7941 2.45633 13.4221L2.45632 13.4221C2.03274 13.0499 1.69198 12.6039 1.45777 12.1072L1.45775 12.1071C1.22336 11.61 1.10132 11.0738 1.10132 10.5301V9.58172C1.10132 8.48008 1.60014 7.44193 2.45632 6.68974L2.45632 6.68973ZM5.63112 6.72912C5.85315 6.72912 6.05293 6.80731 6.18929 6.9271ZM6.18929 6.9271L6.58295 6.47902ZM6.38053 7.31462C6.38053 7.18626 6.32315 7.0447 6.1893 6.9271L6.58295 6.47902M6.38053 7.31462V12.7972ZM3.2482 12.5207C2.94195 12.2516 2.70377 11.9364 2.543 11.5955ZM3.24821 12.5207C3.55463 12.7899 3.92245 13.0068 4.33235 13.156L4.13408 13.7009L4.33235 13.156C4.7423 13.3052 5.18382 13.3827 5.63112 13.3827C5.85319 13.3827 6.05293 13.3045 6.18924 13.1847L6.18931 13.1847C6.32316 13.0671 6.38053 12.9256 6.38053 12.7972" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8108 6.92718C14.9472 6.8074 15.147 6.72924 15.369 6.72924ZM14.0189 6.02581C14.3887 5.701 14.8753 5.52942 15.369 5.52942C16.547 5.52942 17.6901 5.9399 18.5437 6.68989M15.369 6.72924C16.2754 6.72924 17.1316 7.04631 17.7518 7.59125ZM14.8108 6.92718C14.677 7.04482 14.6195 7.18647 14.6195 7.31477V12.7973C14.6195 12.9256 14.6769 13.0672 14.8107 13.1848M14.0189 6.02581C13.6468 6.35278 13.4197 6.8143 13.4197 7.31477ZM17.7518 7.59125C18.3696 8.134 18.6989 8.85226 18.6989 9.58186ZM18.5437 6.68989C19.3999 7.44207 19.8987 8.48023 19.8987 9.58186V10.5479C19.8934 11.6464 19.3924 12.6799 18.5368 13.4282M13.4197 7.31477V12.7973ZM18.6989 9.58186V10.5434ZM18.6989 10.5434C18.695 11.2706 18.364 11.9854 17.7469 12.5252C17.1269 13.0675 16.2729 13.3828 15.369 13.3828C15.147 13.3828 14.9471 13.3046 14.8107 13.1848M18.5368 13.4282C17.6838 14.1745 16.5438 14.5826 15.369 14.5826C14.8752 14.5826 14.3886 14.411 14.0189 14.0862C13.6468 13.7593 13.4197 13.2977 13.4197 12.7973" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.02026 18.7817C9.02026 17.7188 9.89284 16.8729 10.9494 16.8729H11.8104C12.8671 16.8729 13.7396 17.7188 13.7396 18.7817C13.7396 19.8446 12.8671 20.6905 11.8104 20.6905H10.9494C9.89282 20.6905 9.02026 19.8446 9.02026 18.7817ZM10.9494 18.0727C10.5379 18.0727 10.2201 18.3989 10.2201 18.7817C10.2201 19.1646 10.5379 19.4907 10.9494 19.4907H11.8104C12.222 19.4907 12.5397 19.1646 12.5397 18.7817C12.5397 18.3989 12.222 18.0727 11.8104 18.0727H10.9494Z" fill="currentColor"/>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <svg class="navigation__icon" aria-hidden="true"  viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0688 11.1194C14.0688 10.8128 14.3174 10.5642 14.624 10.5642H15.4743C17.939 10.5642 19.9379 12.5606 19.9379 15.0244C19.9379 16.7692 18.5223 18.1829 16.7771 18.1829H14.624C14.3174 18.1829 14.0688 17.9343 14.0688 17.6277C14.0688 17.3211 14.3174 17.0725 14.624 17.0725H16.7771C17.91 17.0725 18.8276 16.1551 18.8276 15.0244C18.8276 13.1748 17.3267 11.6746 15.4743 11.6746H14.624C14.3174 11.6746 14.0688 11.426 14.0688 11.1194Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4829 1.35681C12.4829 1.0502 12.7315 0.801636 13.0381 0.801636C15.1101 0.801636 16.7658 2.52052 16.7658 4.61097C16.7658 6.70141 15.1101 8.4203 13.0381 8.4203C12.7315 8.4203 12.4829 8.17174 12.4829 7.86513C12.4829 7.55852 12.7315 7.30995 13.0381 7.30995C14.4704 7.30995 15.6554 6.11496 15.6554 4.61097C15.6554 3.10697 14.4704 1.91199 13.0381 1.91199C12.7315 1.91199 12.4829 1.66343 12.4829 1.35681Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52561 11.6746C3.6732 11.6746 2.17236 13.1748 2.17236 15.0244C2.17236 16.1551 3.08992 17.0725 4.2228 17.0725H10.1152C11.2481 17.0725 12.1657 16.1551 12.1657 15.0244C12.1657 13.1748 10.6648 11.6746 8.81248 11.6746H5.52561ZM1.06201 15.0244C1.06201 12.5606 3.06089 10.5642 5.52561 10.5642H8.81248C11.2772 10.5642 13.276 12.5606 13.276 15.0244C13.276 16.7692 11.8605 18.1829 10.1152 18.1829H4.2228C2.4776 18.1829 1.06201 16.7692 1.06201 15.0244Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.1693 1.91199C5.73703 1.91199 4.552 3.10697 4.552 4.61097C4.552 6.11497 5.73703 7.30995 7.1693 7.30995C8.60158 7.30995 9.7866 6.11497 9.7866 4.61097C9.7866 3.10697 8.60158 1.91199 7.1693 1.91199ZM3.44165 4.61097C3.44165 2.52052 5.09736 0.801636 7.1693 0.801636C9.24125 0.801636 10.897 2.52052 10.897 4.61097C10.897 6.70142 9.24125 8.4203 7.1693 8.4203C5.09736 8.4203 3.44165 6.70142 3.44165 4.61097Z" fill="currentColor"/>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <svg class="navigation__icon" aria-hidden="true" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0688 11.1194C14.0688 10.8128 14.3174 10.5642 14.624 10.5642H15.4743C17.939 10.5642 19.9379 12.5606 19.9379 15.0244C19.9379 16.7692 18.5223 18.1829 16.7771 18.1829H14.624C14.3174 18.1829 14.0688 17.9343 14.0688 17.6277C14.0688 17.3211 14.3174 17.0725 14.624 17.0725H16.7771C17.91 17.0725 18.8276 16.1551 18.8276 15.0244C18.8276 13.1748 17.3267 11.6746 15.4743 11.6746H14.624C14.3174 11.6746 14.0688 11.426 14.0688 11.1194Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4829 1.35681C12.4829 1.0502 12.7315 0.801636 13.0381 0.801636C15.1101 0.801636 16.7658 2.52052 16.7658 4.61097C16.7658 6.70141 15.1101 8.4203 13.0381 8.4203C12.7315 8.4203 12.4829 8.17174 12.4829 7.86513C12.4829 7.55852 12.7315 7.30995 13.0381 7.30995C14.4704 7.30995 15.6554 6.11496 15.6554 4.61097C15.6554 3.10697 14.4704 1.91199 13.0381 1.91199C12.7315 1.91199 12.4829 1.66343 12.4829 1.35681Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.52561 11.6746C3.6732 11.6746 2.17236 13.1748 2.17236 15.0244C2.17236 16.1551 3.08992 17.0725 4.2228 17.0725H10.1152C11.2481 17.0725 12.1657 16.1551 12.1657 15.0244C12.1657 13.1748 10.6648 11.6746 8.81248 11.6746H5.52561ZM1.06201 15.0244C1.06201 12.5606 3.06089 10.5642 5.52561 10.5642H8.81248C11.2772 10.5642 13.276 12.5606 13.276 15.0244C13.276 16.7692 11.8605 18.1829 10.1152 18.1829H4.2228C2.4776 18.1829 1.06201 16.7692 1.06201 15.0244Z" fill="currentColor"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.1693 1.91199C5.73703 1.91199 4.552 3.10697 4.552 4.61097C4.552 6.11497 5.73703 7.30995 7.1693 7.30995C8.60158 7.30995 9.7866 6.11497 9.7866 4.61097C9.7866 3.10697 8.60158 1.91199 7.1693 1.91199ZM3.44165 4.61097C3.44165 2.52052 5.09736 0.801636 7.1693 0.801636C9.24125 0.801636 10.897 2.52052 10.897 4.61097C10.897 6.70142 9.24125 8.4203 7.1693 8.4203C5.09736 8.4203 3.44165 6.70142 3.44165 4.61097Z" fill="currentColor"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__actions">
-            <div class="header__languages-toggle languages-toggle">
-                <picture class="languages-toggle__flag flag flag--md">
-                    <source srcset="./assets/images/flag-en.webp, ./assets/images/flag-en-2x.webp 2x" type="image/webp" />
+                </div>
+                <div class="chat-form__rules rules">
+                    Chat rules
+                    <svg class="rules__icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.90625 0.5C6.52178 0.5 5.1684 0.910543 4.01726 1.67971C2.86612 2.44888 1.96891 3.54213 1.4391 4.82122C0.909283 6.1003 0.77066 7.50776 1.04076 8.86563C1.31085 10.2235 1.97754 11.4708 2.95651 12.4497C3.93547 13.4287 5.18275 14.0954 6.54062 14.3655C7.89849 14.6356 9.30595 14.497 10.585 13.9672C11.8641 13.4373 12.9573 12.5401 13.7266 11.389C14.4958 10.2379 14.9062 8.88447 14.9062 7.5C14.904 5.64416 14.1658 3.86495 12.8535 2.55267C11.5413 1.24039 9.76209 0.502189 7.90625 0.5Z" fill="white"/>
+                        <path d="M10.5975 6.04552C10.5982 6.44222 10.5094 6.83397 10.3376 7.19154C10.1658 7.54911 9.91548 7.86327 9.60533 8.11061L9.60424 8.11148C9.14186 8.46979 8.82918 8.9872 8.72699 9.56317L8.71234 9.6457H8.62852H7.33543H7.22331L7.23609 9.53431C7.29387 9.03043 7.45197 8.54322 7.70105 8.10142C7.94999 7.65985 8.28477 7.27258 8.68568 6.96239C8.82983 6.84686 8.94465 6.6989 9.02078 6.53057C9.09702 6.36199 9.1323 6.17776 9.12372 5.99294C9.11514 5.80812 9.06296 5.62795 8.97143 5.46716C8.87993 5.30641 8.7517 5.16959 8.59723 5.06787C8.42461 4.95508 8.22601 4.8883 8.02031 4.8739C7.81469 4.85951 7.6088 4.89793 7.4222 4.98551C7.22423 5.08048 7.05809 5.2309 6.94396 5.41849C6.82976 5.60619 6.77256 5.82303 6.7793 6.04264L6.77939 6.0457C6.77939 6.241 6.70176 6.4283 6.56367 6.56639C6.42557 6.70449 6.23828 6.78207 6.04298 6.78207C5.84768 6.78207 5.66039 6.70449 5.52229 6.56639C5.38443 6.42853 5.30687 6.24162 5.30662 6.04667C5.29697 5.53826 5.43733 5.03826 5.71019 4.60915C5.98321 4.17978 6.37677 3.84043 6.84163 3.63355C7.25311 3.44968 7.70426 3.37237 8.15348 3.40875C8.60273 3.44514 9.03559 3.59407 9.41212 3.8418C9.77617 4.08279 10.0751 4.4103 10.2819 4.79481C10.4887 5.17929 10.5971 5.60897 10.5975 6.04552ZM10.5975 6.04552C10.5975 6.04549 10.5975 6.04556 10.5975 6.04552V6.04552ZM8.68843 10.5003V10.4003H8.58843H7.31571H7.21571V10.5003V11.773V11.873H7.31571H8.58843H8.68843V11.773V10.5003ZM9.54298 8.03243C9.06098 8.40594 8.73505 8.9453 8.62852 9.5457L9.54298 8.03243Z" fill="#161B2A"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.14555 3.50842C7.71307 3.4734 7.27872 3.54783 6.88257 3.72485C6.43568 3.92373 6.05719 4.25003 5.79472 4.66281C5.53241 5.07533 5.39747 5.55601 5.40675 6.04477L5.40678 6.04654C5.40698 6.21501 5.47401 6.37654 5.59315 6.49568C5.71249 6.61502 5.87435 6.68207 6.04313 6.68207C6.2119 6.68207 6.37376 6.61502 6.4931 6.49568C6.61212 6.37666 6.67916 6.21537 6.67953 6.04712L6.67949 6.04571M6.85867 5.36651C6.98287 5.16238 7.16366 4.99869 7.37909 4.89535C7.58113 4.80052 7.80481 4.75856 8.02744 4.77414C8.25015 4.78973 8.46518 4.86204 8.65207 4.98415M8.1617 3.30907C8.62768 3.34682 9.07667 3.5013 9.46723 3.75826C9.84503 4.00835 10.1555 4.34839 10.3702 4.74744C10.5847 5.14643 10.6973 5.59232 10.6977 6.04534C10.6977 6.04537 10.6977 6.04531 10.6977 6.04534L10.5977 6.04553L10.5978 6.14552L10.4978 6.1457L10.4977 6.04728C10.4981 6.42839 10.4126 6.80471 10.2476 7.14823C10.085 7.48666 9.84929 7.78466 9.55759 8.02081L9.48187 7.95338C8.98026 8.34209 8.64107 8.9034 8.5302 9.52823L8.57668 9.5457L7.33558 9.5457C7.39184 9.05509 7.54578 8.5807 7.7883 8.15053C8.03069 7.72058 8.35666 7.3435 8.74702 7.04148L8.74836 7.04042C8.90481 6.91504 9.02942 6.75446 9.11204 6.57178C9.19478 6.38882 9.23307 6.18888 9.22376 5.9883C9.21445 5.78773 9.15782 5.59219 9.05848 5.41769M7.33558 9.5457L7.22346 9.5457V9.6457L7.3228 9.6571L7.33558 9.5457ZM8.62542 9.56402L8.57668 9.5457H8.62867L8.54308 9.49398L8.71099 9.21612C8.82767 8.85675 9.02573 8.52899 9.28963 8.25858L9.45754 7.98071L9.54313 8.03243C9.54796 8.02857 9.55278 8.0247 9.55759 8.02081L9.62871 8.08415L9.6096 8.11578L9.60883 8.11705L9.44861 8.38218C9.19295 8.63896 9.00279 8.95365 8.89435 9.29939L8.71425 9.59742L8.71249 9.59675V9.6457L8.61402 9.62822L8.62542 9.56402ZM7.13689 9.52292C7.19619 9.00577 7.35845 8.50573 7.61408 8.05231C7.86943 7.59937 8.21278 7.2021 8.62393 6.88384C8.75549 6.77824 8.86029 6.64308 8.92981 6.48936C8.99955 6.33515 9.03182 6.16663 9.02397 5.99758C9.01612 5.82851 8.96839 5.66371 8.88467 5.51663C8.801 5.36963 8.68375 5.24451 8.54251 5.15147C8.3842 5.04808 8.20209 4.98686 8.01347 4.97365C7.825 4.96046 7.63628 4.99564 7.46521 5.07586C7.28487 5.16246 7.13353 5.29954 7.02954 5.47046C6.92541 5.64161 6.87325 5.83933 6.8794 6.03957L6.87958 6.0457C6.87958 6.26754 6.79136 6.48027 6.63453 6.6371C6.47767 6.79395 6.26495 6.88207 6.04313 6.88207C5.8213 6.88207 5.60858 6.79395 5.45172 6.6371C5.29535 6.48073 5.20728 6.26879 5.20677 6.04768C5.19692 5.51993 5.3427 5.00094 5.62595 4.55549C5.90951 4.10955 6.31825 3.7571 6.80104 3.54222C7.22783 3.35152 7.69577 3.27134 8.1617 3.30907M9.66782 8.18879L9.66564 8.19053C9.58889 8.25001 9.51644 8.31405 9.44861 8.38218L8.89435 9.29939C8.86558 9.39112 8.84256 9.48504 8.8256 9.58064L8.7963 9.7457H7.11133L7.13689 9.52292M10.5977 6.04553L10.5975 5.94552L10.4975 5.9457L10.4977 6.04025C10.4964 5.62204 10.3921 5.21055 10.194 4.84217C9.99506 4.47224 9.70741 4.15712 9.35716 3.92524C8.99469 3.6868 8.57801 3.54345 8.14555 3.50842M10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM10.4977 6.0457C10.4977 6.0457 10.4977 6.0457 10.4977 6.0457ZM7.11585 10.3002H8.78857V11.973H7.11585V10.3002ZM7.31586 10.5002H8.58858V11.773H7.31585L7.31586 10.5002Z" fill="#161B2A"/>
+                    </svg>
+                </div>
+                <picture class="chat-form__snow chat-form__snow--left snow">
+                    <source srcset="./assets/images/snow-1.webp, ./assets/images/snow-1-2x.webp 2x" type="image/webp" />
                     <img
-                            srcset="./assets/images/flag-en.png, ./assets/images/flag-en-2x.png 2x"
-                            class="flag__image"
-                            src="./assets/images/flag-en.png"
-                            alt="flag en"
+                            srcset="./assets/images/snow-1.png, ./assets/images/snow-1-2x.png 2x"
+                            class="snow__image"
+                            src="./assets/images/snow-1.png"
+                            alt="Snow"
                     />
                 </picture>
-                <span class="languages-toggle__lang">en</span>
-                <svg class="languages-toggle__icon" aria-hidden="true" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.5 6.87548C0.5 7.09136 0.580339 7.30729 0.740655 7.47194L5.79049 12.6532C6.11172 12.9828 6.63254 12.9828 6.95364 12.6532C7.27473 12.3237 7.27473 11.7895 6.95364 11.4598L2.48533 6.87548L6.95332 2.2909C7.27442 1.9615 7.27442 1.4271 6.95332 1.0977C6.63222 0.767901 6.11157 0.767901 5.79034 1.0977L0.740472 6.27885C0.580183 6.44358 0.5 6.65952 0.5 6.87548Z" fill="currentColor"/>
-                </svg>
-            </div>
-            <div class="header__hamburger hamburger">
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
-                <div class="hamburger__line"></div>
+                <picture class="chat-form__snow chat-form__snow--right snow">
+                    <source srcset="./assets/images/snow-2.webp, ./assets/images/snow-2-2x.webp 2x" type="image/webp" />
+                    <img
+                            srcset="./assets/images/snow-2.png, ./assets/images/snow-2-2x.png 2x"
+                            class="snow__image"
+                            src="./assets/images/snow-2.png"
+                            alt="Snow"
+                    />
+                </picture>
             </div>
         </div>
-    </header>
-    <div class="header-aside header-aside--width-limitation">
-        <a href="#" class="header-aside__link-logo">
-            <picture class="header-aside__logo-sm logo-sm">
-                <source srcset="./assets/images/logotype-small.webp, ./assets/images/logotype-small-2x.webp 2x" type="image/webp" />
-                <img
-                        srcset="./assets/images/logotype-small.png, ./assets/images/logotype-small-2x.png 2x"
-                        class="logo-sm__image"
-                        src="./assets/images/logotype-small.png"
-                        alt="Logotype"
-                />
-            </picture>
-        </a>
-        <nav class="header-aside__aside-navigation aside-navigation">
-            <ul class="aside-navigation__list">
-                <li class="aside-navigation__item">
-                    <a href="#" class="aside-navigation__link">
-                        <svg class="aside-navigation__icon" aria-hidden="true" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2172 1.72046C1.98709 1.72046 1.80054 1.90701 1.80054 2.13713V7.49944C1.80054 7.72956 1.98709 7.91611 2.2172 7.91611H7.57952C7.80964 7.91611 7.99619 7.72956 7.99619 7.49944V2.13713C7.99619 1.90701 7.80964 1.72046 7.57952 1.72046H2.2172ZM0.550537 2.13713C0.550537 1.21665 1.29673 0.470459 2.2172 0.470459H7.57952C8.49999 0.470459 9.24619 1.21665 9.24619 2.13713V7.49944C9.24619 8.41992 8.49999 9.16611 7.57952 9.16611H2.2172C1.29673 9.16611 0.550537 8.41992 0.550537 7.49944V2.13713Z" fill="#3B436B"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.2172 13.0248C1.98709 13.0248 1.80054 13.2113 1.80054 13.4414V18.8038C1.80054 19.0339 1.98709 19.2204 2.2172 19.2204H7.57952C7.80964 19.2204 7.99619 19.0339 7.99619 18.8038V13.4414C7.99619 13.2113 7.80964 13.0248 7.57952 13.0248H2.2172ZM0.550537 13.4414C0.550537 12.521 1.29673 11.7748 2.2172 11.7748H7.57952C8.49999 11.7748 9.24619 12.521 9.24619 13.4414V18.8038C9.24619 19.7242 8.49999 20.4704 7.57952 20.4704H2.2172C1.29673 20.4704 0.550537 19.7242 0.550537 18.8038V13.4414Z" fill="#2D3660"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5216 1.72046C13.2915 1.72046 13.105 1.90701 13.105 2.13713V7.49944C13.105 7.72956 13.2915 7.91611 13.5216 7.91611H18.884C19.1141 7.91611 19.3006 7.72956 19.3006 7.49944V2.13713C19.3006 1.90701 19.1141 1.72046 18.884 1.72046H13.5216ZM11.855 2.13713C11.855 1.21665 12.6012 0.470459 13.5216 0.470459H18.884C19.8044 0.470459 20.5506 1.21665 20.5506 2.13713V7.49944C20.5506 8.41992 19.8044 9.16611 18.884 9.16611H13.5216C12.6012 9.16611 11.855 8.41992 11.855 7.49944V2.13713Z" fill="#4D5B97"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5216 13.0248C13.2915 13.0248 13.105 13.2113 13.105 13.4414V18.8038C13.105 19.0339 13.2915 19.2204 13.5216 19.2204H18.884C19.1141 19.2204 19.3006 19.0339 19.3006 18.8038V13.4414C19.3006 13.2113 19.1141 13.0248 18.884 13.0248H13.5216ZM11.855 13.4414C11.855 12.521 12.6012 11.7748 13.5216 11.7748H18.884C19.8044 11.7748 20.5506 12.521 20.5506 13.4414V18.8038C20.5506 19.7242 19.8044 20.4704 18.884 20.4704H13.5216C12.6012 20.4704 11.855 19.7242 11.855 18.8038V13.4414Z" fill="#3B436B"/>
-                        </svg>
-                        <span class="aside-navigation__title">
-                                main
-                            </span>
-                    </a>
-                </li>
-                <li class="aside-navigation__item">
-                    <a href="#" class="aside-navigation__link">
-                        <svg class="aside-navigation__icon" aria-hidden="true" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.75C1.41421 12.75 1.75 13.0858 1.75 13.5C1.75 16.4837 2.93522 19.3452 5.045 21.455L4.51467 21.9853L5.045 21.455C7.15478 23.5647 10.0163 24.75 13 24.75L13.0009 24.75C14.6613 24.752 16.3014 24.3851 17.8027 23.6759C19.304 22.9666 20.6291 21.9327 21.6821 20.6489C21.9448 20.3286 22.4174 20.2819 22.7376 20.5446C23.0579 20.8073 23.1046 21.2799 22.8419 21.6001C21.6479 23.0557 20.1456 24.228 18.4435 25.0321L18.4435 25.0321C16.7415 25.8362 14.8823 26.2521 13 26.25M1 12.75C0.585786 12.75 0.25 13.0858 0.25 13.5ZM0.25 13.5C0.25 16.8815 1.59324 20.1246 3.98434 22.5156ZM3.98434 22.5156C6.37532 24.9066 9.61817 26.2499 12.9996 26.25Z" fill="#3B436B"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 2.25C10.0163 2.25 7.15478 3.43529 5.045 5.54508L4.51467 5.01475L5.045 5.54508C2.93522 7.65485 1.75 10.5163 1.75 13.5C1.75 13.9142 1.41421 14.25 1 14.25C0.585786 14.25 0.25 13.9142 0.25 13.5C0.25 10.1185 1.59324 6.87551 3.98434 4.48442M3.98434 4.48442C6.37542 2.09333 9.61846 0.75 13 0.75C13.4142 0.75 13.75 1.08579 13.75 1.5C13.75 1.91421 13.4142 2.25 13 2.25" fill="#4D5B97"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.25 1.5C12.25 1.08579 12.5858 0.75 13 0.75C16.3815 0.75 19.6246 2.09333 22.0156 4.48442C24.4065 6.87528 25.7497 10.1178 25.75 13.4991C25.75 13.4994 25.75 13.4997 25.75 13.5H25L25.75 13.4986C25.75 13.4987 25.75 13.4989 25.75 13.4991C25.7555 16.4571 24.726 19.324 22.8397 21.6026C22.5756 21.9217 22.1028 21.9663 21.7838 21.7021C21.4647 21.438 21.4201 20.9652 21.6843 20.6462C23.3473 18.6371 24.255 16.1094 24.25 13.5014L24.25 13.5C24.25 10.5163 23.0647 7.65486 20.955 5.54508L21.46 5.04L20.955 5.54508C18.8452 3.43529 15.9837 2.25 13 2.25C12.5858 2.25 12.25 1.91421 12.25 1.5Z" fill="#2D3660"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 8.25C10.1005 8.25 7.75 10.6005 7.75 13.5C7.75 16.3995 10.1005 18.75 13 18.75C15.8995 18.75 18.25 16.3995 18.25 13.5C18.25 10.6005 15.8995 8.25 13 8.25ZM6.25 13.5C6.25 9.77208 9.27208 6.75 13 6.75C16.7279 6.75 19.75 9.77208 19.75 13.5C19.75 17.2279 16.7279 20.25 13 20.25C9.27208 20.25 6.25 17.2279 6.25 13.5Z" fill="#3B436B"/>
-                        </svg>
-                        <span class="aside-navigation__title">
-                            jackpot
-                        </span>
-                        <span class="aside-navigation__price">
-                            $ 0
-                        </span>
-                    </a>
-                </li>
-                <li class="aside-navigation__item">
-                    <a href="#" class="aside-navigation__link">
-                        <svg class="aside-navigation__icon" aria-hidden="true" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.31061 2.64861C2.50446 4.03765 3.15233 5.33252 4.16484 6.32435L4.16651 6.32598L15.5099 17.507L17.3916 15.5804L6.03661 4.39731C5.01622 3.41437 3.70409 2.80375 2.31061 2.64861ZM1.48914 1.1102C3.57162 1.08004 5.58155 1.87447 7.08065 3.32028L7.0863 3.32573L7.08627 3.32576L18.9763 15.0357C19.2705 15.3255 19.2751 15.7987 18.9866 16.0941L16.0566 19.0941C15.9172 19.2369 15.7266 19.3182 15.5271 19.3201C15.3276 19.322 15.1356 19.2443 14.9935 19.1042L3.11518 7.3959C3.11489 7.39561 3.11459 7.39532 3.1143 7.39503C1.62733 5.93797 0.777348 3.95166 0.750066 1.86995C0.744643 1.45618 1.07537 1.1162 1.48914 1.1102Z" fill="#4D5B97"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0143 17.6542C20.3045 17.3586 20.7793 17.3544 21.0749 17.6446L24.4279 20.9376C24.6656 21.1737 24.8542 21.4544 24.9829 21.7638C25.1116 22.073 25.1779 22.4048 25.1779 22.7397C25.1779 23.0747 25.1116 23.4063 24.9829 23.7156C24.8542 24.025 24.6656 24.3057 24.4279 24.5418L24.4252 24.5445C23.9502 25.0116 23.3106 25.2734 22.6444 25.2734C21.9788 25.2734 21.3399 25.0121 20.865 24.5459L17.4661 21.2371C17.1693 20.9482 17.1629 20.4733 17.4519 20.1765C17.7408 19.8797 18.2156 19.8733 18.5124 20.1623L21.9125 23.4723L21.9152 23.4749C22.1098 23.6662 22.3716 23.7734 22.6444 23.7734C22.9164 23.7734 23.1777 23.6667 23.3721 23.4763C23.4689 23.3798 23.5456 23.2654 23.598 23.1394C23.6507 23.0126 23.6779 22.8768 23.6779 22.7397C23.6779 22.6025 23.6507 22.4666 23.598 22.3401C23.5456 22.2141 23.4688 22.0995 23.3721 22.0031L20.0238 18.7148C19.7283 18.4246 19.724 17.9497 20.0143 17.6542Z" fill="#4D5B97"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0299 14.3799C24.3228 14.6728 24.3228 15.1477 24.0299 15.4405L15.2999 24.1705C15.007 24.4634 14.5321 24.4634 14.2392 24.1705C13.9463 23.8777 13.9463 23.4028 14.2392 23.1099L22.9692 14.3799C23.2621 14.087 23.737 14.087 24.0299 14.3799Z" fill="#3B436B"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10309 14.9565C7.3925 14.6602 7.86735 14.6546 8.16368 14.944L11.1637 17.874C11.4601 18.1634 11.4657 18.6382 11.1763 18.9346C10.8868 19.2309 10.412 19.2365 10.1157 18.9471L7.11562 16.0171C6.81929 15.7277 6.81368 15.2528 7.10309 14.9565Z" fill="#2D3660"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3011 0.750058C24.7148 0.744974 25.0545 1.07587 25.0602 1.48957C25.0892 3.57105 24.2954 5.5798 22.8515 7.07922C22.8512 7.07959 22.8508 7.07996 22.8504 7.08033L18.7825 11.3381C18.4963 11.6376 18.0216 11.6484 17.7221 11.3623C17.4226 11.0761 17.4118 10.6014 17.6979 10.3019L21.768 6.0419L21.7702 6.03967C22.7542 5.01818 23.3657 3.70476 23.5215 2.30985C22.1334 2.50204 20.8387 3.14689 19.8451 4.15584L15.735 8.33584C15.4446 8.63119 14.9697 8.6352 14.6744 8.34478C14.379 8.05437 14.375 7.57951 14.6654 7.28416L18.7755 3.10416C20.2349 1.62191 22.2211 0.775617 24.3011 0.750058Z" fill="#2D3660"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99251 17.4227C6.28974 17.7112 6.29683 18.186 6.00834 18.4832L2.7012 21.8906C2.51048 22.0818 2.40332 22.3408 2.40332 22.6109C2.40332 22.8809 2.51045 23.14 2.70115 23.3312L2.70617 23.3362C2.8012 23.4333 2.91459 23.5105 3.03983 23.5632C3.16481 23.6158 3.2992 23.6429 3.43512 23.6429C3.57103 23.6429 3.70541 23.6158 3.83039 23.5632C3.95571 23.5105 4.06918 23.4333 4.16413 23.3363L4.16583 23.3346L7.46582 19.9846C7.7565 19.6895 8.23136 19.6859 8.52645 19.9766C8.82154 20.2673 8.82511 20.7421 8.53442 21.0372L5.23613 24.3855C5.23581 24.3858 5.23548 24.3861 5.23516 24.3865C5.00068 24.6258 4.72086 24.8159 4.41215 24.9458M5.99251 17.4227C5.69527 17.1342 5.22045 17.1413 4.93196 17.4385ZM4.93196 17.4385L1.63523 20.8352ZM1.63523 20.8352C1.16648 21.3072 0.90332 21.9455 0.90332 22.6109C0.90332 23.2769 1.167 23.9159 1.63668 24.388C1.87079 24.6265 2.14996 24.8161 2.45808 24.9458M2.45808 24.9458C2.76753 25.076 3.09973 25.1429 3.43512 25.1429ZM3.43512 25.1429C3.7705 25.1429 4.1027 25.076 4.41215 24.9458Z" fill="#3B436B"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00971 14.2002C2.3026 13.9073 2.77748 13.9073 3.07037 14.2002L11.7903 22.9202C12.0832 23.2131 12.0832 23.688 11.7903 23.9809C11.4974 24.2738 11.0226 24.2738 10.7297 23.9809L2.00971 15.2609C1.71682 14.968 1.71682 14.4931 2.00971 14.2002Z" fill="#2D3660"/>
-                        </svg>
-                        <span class="aside-navigation__title">
-                            pvp mines
-                        </span>
-                        <span class="aside-navigation__price">
-                            $ 0
-                        </span>
-                        <span class="aside-navigation__label">
-                            NEW!
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </div>
     <script src="./js/libs/swiper.js"></script>
     <script src="./js/bundle.js"></script>

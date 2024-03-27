@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+
+  &__main {
+    width: 119.2rem;
+  }
+
+  &__chat {
+    width: 32rem;
+    height: 100vh;
+    border-left: 1px solid $color-border;
+  }
+}

@@ -12,11 +12,7 @@ body {
 }
 
 html {
-	font-size: 10px;
-
-	@include media-breakpoint-down(xl) {
-		font-size: vwcalc(10, 1440);
-	}
+	font-size: vwcalc(10, $vw-base);
 
 	@include media-breakpoint-down(md) {
 		font-size: vwcalc(10, 992);
@@ -37,6 +33,8 @@ body {
 	min-width: 320px;
 	font-size: 1.4rem;
 	line-height: 1.57;
+	height: 100vh;
+	overflow: hidden;
 
 	@include media-breakpoint-up(lg) {
 		font-size: 1.6rem;

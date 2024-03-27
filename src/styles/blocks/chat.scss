@@ -6,6 +6,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 2.9rem 2.4rem;
+    height: 8.8rem;
+  }
+
+  &__chat-form {
+    height: 15.2rem;
   }
 
   &__title {
@@ -44,5 +49,7 @@
     flex-direction: column;
     gap: 1.6rem;
     padding: 1.3rem 2.4rem 1.7rem;
+    height: calc(100vh - 24rem);
+    overflow-y: auto;
   }
 }

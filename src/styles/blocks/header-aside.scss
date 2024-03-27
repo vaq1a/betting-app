@@ -1,11 +1,5 @@
 .header-aside {
   background-color: $color-primary;
-  border-right: 1px solid $color-border;
-
-  &--width-limitation {
-    width: 8.8rem;
-    height: 100%;
-  }
 
   &__link-logo {
     display: inline-block;

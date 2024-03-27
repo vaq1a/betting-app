@@ -3,7 +3,7 @@
   grid-template-areas:
     "first first first second second second third third third fourth fourth fourth"
     "fifth fifth fifth fifth sixth sixth sixth sixth seventh seventh seventh seventh";
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 16.25rem 21.925rem;
   grid-template-columns: repeat(12, 1fr);
   gap: 1.2rem;
 
@@ -30,6 +30,8 @@
                         "../assets/images/snow-7.png" type("image/png") 1x,
                         "../assets/images/snow-7-2x.png" type("image/png") 2x
         );
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
         top: 1.6rem;
         right: 3.6rem;
@@ -55,6 +57,8 @@
                         "../assets/images/snow-8.png" type("image/png") 1x,
                         "../assets/images/snow-8-2x.png" type("image/png") 2x
         );
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
         top: 1.6rem;
         right: 2.4rem;
@@ -84,6 +88,8 @@
                         "../assets/images/snow-9.png" type("image/png") 1x,
                         "../assets/images/snow-9-2x.png" type("image/png") 2x
         );
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
         top: 2.4rem;
         right: 0;

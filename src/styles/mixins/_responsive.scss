@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-$vw-base: 1440 !default;
+$vw-base: 1513 !default;
 
 @function convert-to-vw($value, $base-value: $vw-base) {
 	$value: math.div($value, ($base-value * 0.01)) * 1 * 1vw;

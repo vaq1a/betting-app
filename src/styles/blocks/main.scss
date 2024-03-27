@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  flex-direction: column;
+
+  &__header-upper {
+    border-bottom: 1px solid $color-border;
+  }
+}

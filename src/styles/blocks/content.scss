@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 110.4rem;
+  background-color: $color-accent-95;
+
+  &__main-part {
+    padding: 3.4rem;
+    height: calc(100vh - 11.6rem);
+    overflow-y: auto;
+  }
+
+  &__banners {
+    margin-top: 3.6rem;
+  }
+}
