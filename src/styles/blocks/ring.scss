@@ -1,0 +1,16 @@
+.ring {
+  display: block;
+  width: 44rem;
+  min-width: 44rem;
+  height: 44rem;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &--spin-animation {
+    animation: spin 6s linear infinite;
+  }
+}

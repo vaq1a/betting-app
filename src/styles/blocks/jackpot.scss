@@ -1,0 +1,13 @@
+.jackpot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__drum {
+    margin-bottom: 1.1rem;
+  }
+
+  &__hash {
+    margin-bottom: 1.6rem;
+  }
+}

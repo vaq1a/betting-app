@@ -1,0 +1,57 @@
+.jackpot-drum {
+  position: relative;
+  width: 48rem;
+  min-width: 48rem;
+  height: 48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__foundation {
+    position: absolute;
+    inset: 0;
+  }
+
+  &__ring {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  &__content {
+    max-width: 14.4rem;
+    z-index: 2;
+  }
+
+  &__snow {
+    position: absolute;
+
+    &--first {
+      width: 10.6rem;
+      height: 7.6rem;
+      right: 11.2rem;
+      bottom: -1.6rem;
+    }
+
+    &--second {
+      width: 8.5rem;
+      height: 8.1rem;
+      right: 2.8rem;
+      bottom: 3.6rem;
+    }
+
+    &--third {
+      width: 7.8rem;
+      height: 7.2rem;
+      top: 3.2rem;
+      left: 6.4rem;
+    }
+
+    &--fourth  {
+      width: 20.2rem;
+      height: 8.4rem;
+      top: -1.6rem;
+      right: 13.9rem;
+    }
+  }
+}

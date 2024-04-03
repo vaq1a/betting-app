@@ -1,0 +1,12 @@
+.jackpot-drum-foundation {
+  display: block;
+  width: 48rem;
+  min-width: 48rem;
+  height: 48rem;
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

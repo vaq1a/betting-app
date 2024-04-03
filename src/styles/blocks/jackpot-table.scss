@@ -1,0 +1,70 @@
+.jackpot-table {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding: 2.2rem;
+  width: 100%;
+  border: 0.2rem solid $color-accent-75;
+  border-radius: 0.5rem;
+
+  &__row {
+    display: flex;
+    gap: 2.2rem;
+  }
+
+  &__row-item {
+    width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-accent-70;
+    padding: 2.2rem;
+    min-height: 24rem;
+    position: relative;
+  }
+
+  &__info-text {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $color-light;
+  }
+
+  &__snow {
+    position: absolute;
+
+    &--first {
+      width: 6.3rem;
+      height: 2.1rem;
+      top: -0.8rem;
+      left: 0.8rem;
+    }
+
+    &--second {
+      width: 27.5rem;
+      height: 4.8rem;
+      top: -1.6rem;
+      right: 4rem;
+    }
+
+    &--third {
+      width: 20.2rem;
+      height: 4.5rem;
+      top: -1.6rem;
+      left: 3.2rem;
+    }
+
+    &--fourth {
+      width: 10.2rem;
+      height: 3.9rem;
+      top: -1.6rem;
+      right: 8rem;
+    }
+  }
+}
