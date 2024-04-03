@@ -1,0 +1,45 @@
+.rewards-open-cases {
+  display: flex;
+  gap: 1.2rem;
+
+  &__item {
+    position: relative;
+    width: 100%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+
+    &--first {
+      &:after {
+        backdrop-filter: hue-rotate(30deg);
+      }
+    }
+
+    &--second {
+      &:after {
+        backdrop-filter: hue-rotate(90deg);
+      }
+    }
+
+    &--third {
+      &:after {
+        backdrop-filter: hue-rotate(150deg);
+      }
+    }
+
+    &--fourth {
+      &:after {
+        backdrop-filter: hue-rotate(210deg);
+      }
+    }
+
+    &--fifth {
+      &:after {
+        backdrop-filter: hue-rotate(300deg);
+      }
+    }
+  }
+}

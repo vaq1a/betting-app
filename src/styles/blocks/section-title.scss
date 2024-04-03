@@ -5,10 +5,17 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $color-active-60;
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  &--yellow {
+    color: $color-active-60;
+  }
+
+  &--white {
+    color: $color-light;
+  }
 
   &:before {
     content: '';
