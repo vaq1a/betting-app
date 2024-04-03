@@ -33,4 +33,9 @@
     color: $color-accent-37;
     border: 0.2rem solid $color-accent-37;
   }
+
+  &--disabled-without-outline {
+    background: transparent;
+    color: $color-accent-37;
+  }
 }
