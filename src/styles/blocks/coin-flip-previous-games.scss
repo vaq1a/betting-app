@@ -1,0 +1,21 @@
+.coin-flip-previous-games {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  &__title {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-accent-30;
+    white-space: nowrap;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+  }
+}

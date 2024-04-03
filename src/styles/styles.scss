@@ -43,6 +43,7 @@
 
 @import 'blocks/games';
 @import 'blocks/promo-icon';
+@import 'blocks/promo-logo';
 @import 'blocks/games-title';
 @import 'blocks/games-info-cards';
 @import 'blocks/games-info-cards-item';
@@ -56,3 +57,8 @@
 @import 'blocks/jackpot-drum-foundation';
 @import 'blocks/ring';
 @import 'blocks/hash';
+
+@import 'blocks/coin-flip';
+@import 'blocks/coin-flip-previous-games';
+@import 'blocks/coin-flip-table';
+@import 'blocks/coin-flip-table-row';
