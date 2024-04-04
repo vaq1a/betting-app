@@ -1,0 +1,32 @@
+.mines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+
+  &__calculator {
+    position: relative;
+    max-width: 48rem;
+
+    &--snow {
+      &:after {
+        content: '';
+        display: block;
+        width: 20.4rem;
+        min-width: 20.4rem;
+        height: 4.9rem;
+        background-image: image-set(
+                        "../assets/images/snow-27.webp" type("image/webp") 1x,
+                        "../assets/images/snow-27-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-27.png" type("image/png") 1x,
+                        "../assets/images/snow-27-2x.png" type("image/png") 2x
+        );
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -1.4rem;
+        left: 12.2rem;
+      }
+    }
+  }
+}

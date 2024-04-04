@@ -1,0 +1,34 @@
+.mines-calculator-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  &__title {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-accent-30;
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-light;
+    border-radius: 0.2rem;
+    background-color: $color-accent-58;
+    padding: 0.9rem;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

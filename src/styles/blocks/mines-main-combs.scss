@@ -1,0 +1,100 @@
+.mines-main-combs {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+
+  &__item {
+    &--snow {
+      &-first:before,
+      &-second:before,
+      &-third:before,
+      &-fourth:before,
+      &-fifth:before,
+      &-sixth:before {
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+      }
+
+      &-first:before {
+        width: 4.4rem;
+        height: 2.5rem;
+        background-image: image-set(
+                        "../assets/images/snow-21.webp" type("image/webp") 1x,
+                        "../assets/images/snow-21-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-21.png" type("image/png") 1x,
+                        "../assets/images/snow-21-2x.png" type("image/png") 2x
+        );
+        top: -0.8rem;
+        left: 1.8rem;
+      }
+
+      &-second:before {
+        width: 8.2rem;
+        height: 3.3rem;
+        background-image: image-set(
+                        "../assets/images/snow-22.webp" type("image/webp") 1x,
+                        "../assets/images/snow-22-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-22.png" type("image/png") 1x,
+                        "../assets/images/snow-22-2x.png" type("image/png") 2x
+        );
+        left: -0.1rem;
+        top: -0.8rem;
+      }
+
+      &-third:before {
+        width: 5.1rem;
+        height: 2.8rem;
+        background-image: image-set(
+                        "../assets/images/snow-23.webp" type("image/webp") 1x,
+                        "../assets/images/snow-23-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-23.png" type("image/png") 1x,
+                        "../assets/images/snow-23-2x.png" type("image/png") 2x
+        );
+        top: -0.8rem;
+        left: 1.4rem;
+      }
+
+      &-fourth:before {
+        width: 7.4rem;
+        height: 3rem;
+        background-image: image-set(
+                        "../assets/images/snow-24.webp" type("image/webp") 1x,
+                        "../assets/images/snow-24-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-24.png" type("image/png") 1x,
+                        "../assets/images/snow-24-2x.png" type("image/png") 2x
+        );
+        top: -0.8rem;
+        left: 0.3rem;
+      }
+
+      &-fifth:before {
+        width: 7.4rem;
+        height: 2.5rem;
+        background-image: image-set(
+                        "../assets/images/snow-25.webp" type("image/webp") 1x,
+                        "../assets/images/snow-25-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-25.png" type("image/png") 1x,
+                        "../assets/images/snow-25-2x.png" type("image/png") 2x
+        );
+        top: -0.8rem;
+        left: 0.3rem;
+      }
+
+      &-sixth:before {
+        width: 6.4rem;
+        height: 2.4rem;
+        background-image: image-set(
+                        "../assets/images/snow-26.webp" type("image/webp") 1x,
+                        "../assets/images/snow-26-2x.webp" type("image/webp") 2x,
+                        "../assets/images/snow-26.png" type("image/png") 1x,
+                        "../assets/images/snow-26-2x.png" type("image/png") 2x
+        );
+        top: -0.8rem;
+        left: 0.8rem;
+      }
+    }
+  }
+}
