@@ -3,7 +3,7 @@ body {
 	height: 100%;
 	font-weight: 400;
 	margin: 0;
-	color: $color-dark;
+	color: $color-dark-100;
 	font-family: $font-oswald;
 
 	@include media-breakpoint-down(md) {

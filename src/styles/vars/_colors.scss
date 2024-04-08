@@ -1,19 +1,26 @@
 /**
  * Main
  */
-$color-dark: hsl(0, 0%, 0%);
-$color-light: hsl(0, 0%, 100%);
 $color-primary: hsl(226, 25%, 10%);
 $color-secondary: hsl(230, 19%, 50%);
+
+$color-dark-100: hsl(0, 0%, 0%);
+$color-dark-25: hsl(229, 16%, 52%);
+$color-dark-20: hsl(248, 17%, 53%);
+$color-dark-15: hsl(248, 22%, 61%);
+$color-dark-10: hsl(215, 14%, 61%);
+
+$color-light: hsl(0, 0%, 100%);
+
 $color-active-60: hsl(47, 100%, 50%);
 $color-active-100: hsl(40, 100%, 48%);
+
 $color-accent-20: hsl(228,19%,90%);
-$color-accent-30: hsl(215, 14%, 61%);
 $color-accent-35: hsl(21, 27%, 50%);
-$color-accent-37: hsl(229, 16%, 52%);
 $color-accent-40: hsl(229, 20%, 39%);
 $color-accent-50: hsl(240, 32%, 41%);
 $color-accent-55: hsl(230, 29%, 33%);
+$color-accent-56: hsl(240, 30%, 16%);
 $color-accent-57: hsl(233, 6%, 25%);
 $color-accent-58: hsl(225, 30%, 22%);
 $color-accent-60: hsl(229, 27%, 15%);
