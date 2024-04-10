@@ -5,6 +5,10 @@
     display: inline-block;
     background-color: $color-accent-100;
     padding: 2rem;
-    margin-bottom: 1.6rem;
+  }
+
+  &__aside-navigation {
+    height: calc(100vh - 12.1rem);
+    overflow-y: auto;
   }
 }

@@ -12,7 +12,7 @@
 @import 'blocks/button';
 @import 'blocks/info-label';
 @import 'blocks/section-title';
-@import 'blocks/section-switch';
+@import 'blocks/button-switch';
 
 @import 'blocks/header';
 @import 'blocks/logo-md';
@@ -63,6 +63,7 @@
 @import 'blocks/coin-flip';
 @import 'blocks/coin-flip-previous-games';
 @import 'blocks/coin-flip-table';
+@import 'blocks/coin-flip-table-header';
 @import 'blocks/coin-flip-table-row';
 
 @import 'blocks/rewards';
@@ -78,6 +79,10 @@
 @import 'blocks/mines-main-combs-item';
 @import 'blocks/mines-calculator-section';
 
+@import 'blocks/plinko';
+@import 'blocks/plinko-table';
 @import 'blocks/plinko-sky';
 @import 'blocks/plinko-sky-points';
 @import 'blocks/plinko-sky-points-item';
+@import 'blocks/plinko-settings';
+@import 'blocks/plinko-settings-sublock-buttons';

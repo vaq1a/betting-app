@@ -1,0 +1,22 @@
+.plinko-settings-sublock-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  &__title {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: $color-dark-10;
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__button-switch {
+
+  }
+}

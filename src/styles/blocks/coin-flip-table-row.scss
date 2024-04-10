@@ -8,7 +8,14 @@
     align-items: center;
     justify-content: center;
     width: 20%;
-    padding: 2rem;
+
+    &--broad-indent {
+      padding: 2rem;
+    }
+
+    &--narrow-indent {
+      padding: 1.1rem;
+    }
   }
 
   &__rivals {
@@ -38,5 +45,42 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: $color-active-60;
+  }
+
+  &__text-info {
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-dark-10;
+  }
+
+  &__amount {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-oswald;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    &--light {
+      color: $color-light;
+    }
+
+    &--caustic {
+      color: $color-caustic;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-dark-10;
   }
 }

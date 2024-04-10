@@ -1,0 +1,22 @@
+.coin-flip-table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__cell {
+    font-family: $font-segoe-ui;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: $color-dark-10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+
+    &--narrow-indent {
+      padding: 0.9rem;
+    }
+  }
+}

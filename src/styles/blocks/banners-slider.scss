@@ -37,6 +37,15 @@
     }
   }
 
+  &__slide {
+    transition: opacity 1s;
+
+    &.swiper-slide-prev,
+    &.swiper-slide-next {
+      opacity: 0;
+    }
+  }
+
   &__snow {
     position: absolute;
     z-index: 3;
