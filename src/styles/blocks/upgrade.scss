@@ -1,0 +1,12 @@
+.upgrade {
+  &__win-card {
+    width: 34.2rem;
+  }
+
+  &__win-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+}
