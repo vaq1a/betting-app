@@ -1,4 +1,4 @@
-.plinko-settings-sublock-buttons {
+.mines-calculator-section-buttons {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -14,9 +14,5 @@
     &--center {
       text-align: center;
     }
-  }
-
-  &__button-switch {
-
   }
 }
